@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: TREEVIEW OBJECT PROPERTIES TYPES GET
+# key: objtype
+# group: TreeView Object
+# --
+TREEVIEW OBJECT PROPERTIES TYPES GET ( , ${1:subtype}, ,${2:$objName} )
+$0

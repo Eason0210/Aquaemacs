@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: MACRO END ( "Error" )
+# key: mcrend
+# --
+MACRO END ( "Error" )
+$0

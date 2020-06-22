@@ -1,0 +1,204 @@
+[submodule "site-lisp/extensions/lazycat-theme"]
+	path = site-lisp/extensions/lazycat-theme
+	url = https://github.com/manateelazycat/lazycat-theme.git
+[submodule "site-lisp/extensions/sdcv"]
+	path = site-lisp/extensions/sdcv
+	url = https://github.com/manateelazycat/sdcv.git
+[submodule "site-lisp/extensions/company-english-helper"]
+	path = site-lisp/extensions/company-english-helper
+	url = https://github.com/manateelazycat/company-english-helper.git
+[submodule "site-lisp/extensions/typescript"]
+	path = site-lisp/extensions/typescript
+	url = https://github.com/ananthakumaran/typescript.el.git
+[submodule "site-lisp/extensions/watch-other-window"]
+	path = site-lisp/extensions/watch-other-window
+	url = https://github.com/manateelazycat/watch-other-window.git
+[submodule "site-lisp/extensions/magit"]
+	path = site-lisp/extensions/magit
+	url = https://github.com/magit/magit
+[submodule "site-lisp/extensions/web-mode"]
+	path = site-lisp/extensions/web-mode
+	url = https://github.com/fxbois/web-mode
+[submodule "site-lisp/extensions/iedit"]
+	path = site-lisp/extensions/iedit
+	url = https://github.com/victorhge/iedit
+[submodule "site-lisp/extensions/Indium"]
+	path = site-lisp/extensions/Indium
+	url = https://github.com/NicolasPetton/Indium
+[submodule "site-lisp/extensions/cache-path-from-shell"]
+	path = site-lisp/extensions/cache-path-from-shell
+	url = https://github.com/manateelazycat/cache-path-from-shell.git
+[submodule "site-lisp/extensions/insert-translated-name"]
+	path = site-lisp/extensions/insert-translated-name
+	url = https://github.com/manateelazycat/insert-translated-name.git
+[submodule "site-lisp/extensions/vi-navigate"]
+	path = site-lisp/extensions/vi-navigate
+	url = https://github.com/manateelazycat/vi-navigate.git
+[submodule "site-lisp/extensions/awesome-tray"]
+	path = site-lisp/extensions/awesome-tray
+	url = https://github.com/manateelazycat/awesome-tray.git
+[submodule "site-lisp/extensions/grep-dired"]
+	path = site-lisp/extensions/grep-dired
+	url = https://github.com/manateelazycat/grep-dired.git
+[submodule "site-lisp/extensions/swift-mode"]
+	path = site-lisp/extensions/swift-mode
+	url = http://github.com/swift-emacs/swift-mode
+[submodule "site-lisp/extensions/awesome-pair"]
+	path = site-lisp/extensions/awesome-pair
+	url = https://github.com/manateelazycat/awesome-pair.git
+[submodule "site-lisp/extensions/go-mode"]
+	path = site-lisp/extensions/go-mode
+	url = https://github.com/dominikh/go-mode.el.git
+[submodule "site-lisp/extensions/color-rg"]
+	path = site-lisp/extensions/color-rg
+	url = https://github.com/manateelazycat/color-rg.git
+[submodule "site-lisp/extensions/rjsx-mode"]
+	path = site-lisp/extensions/rjsx-mode
+	url = https://github.com/felipeochoa/rjsx-mode.git
+[submodule "site-lisp/extensions/bison"]
+	path = site-lisp/extensions/bison
+	url = https://github.com/manateelazycat/bison.git
+[submodule "site-lisp/extensions/auto-save"]
+	path = site-lisp/extensions/auto-save
+	url = https://github.com/manateelazycat/auto-save.git
+[submodule "site-lisp/extensions/thing-edit"]
+	path = site-lisp/extensions/thing-edit
+	url = https://github.com/manateelazycat/thing-edit.git
+[submodule "site-lisp/extensions/goto-line-preview"]
+	path = site-lisp/extensions/goto-line-preview
+	url = https://github.com/jcs090218/goto-line-preview.git
+[submodule "site-lisp/extensions/open-newline"]
+	path = site-lisp/extensions/open-newline
+	url = https://github.com/manateelazycat/open-newline.git
+[submodule "site-lisp/extensions/aweshell"]
+	path = site-lisp/extensions/aweshell
+	url = https://github.com/manateelazycat/aweshell.git
+[submodule "site-lisp/extensions/lazy-load"]
+	path = site-lisp/extensions/lazy-load
+	url = https://github.com/manateelazycat/lazy-load.git
+[submodule "site-lisp/extensions/with-editor"]
+	path = site-lisp/extensions/with-editor
+	url = https://github.com/magit/with-editor.git
+[submodule "site-lisp/extensions/smart-align"]
+	path = site-lisp/extensions/smart-align
+	url = https://github.com/manateelazycat/smart-align.git
+[submodule "site-lisp/extensions/awesome-tab"]
+	path = site-lisp/extensions/awesome-tab
+	url = https://github.com/manateelazycat/awesome-tab.git
+[submodule "site-lisp/extensions/olivetti"]
+	path = site-lisp/extensions/olivetti
+	url = https://github.com/rnkn/olivetti.git
+[submodule "site-lisp/extensions/snails"]
+	path = site-lisp/extensions/snails
+	url = https://github.com/manateelazycat/snails.git
+[submodule "site-lisp/extensions/posframe"]
+	path = site-lisp/extensions/posframe
+	url = https://github.com/tumashu/posframe.git
+[submodule "site-lisp/extensions/fuz"]
+	path = site-lisp/extensions/fuz
+	url = https://github.com/cireu/fuz.el.git
+[submodule "site-lisp/extensions/projectile"]
+	path = site-lisp/extensions/projectile
+	url = https://github.com/bbatsov/projectile.git
+[submodule "site-lisp/extensions/benchmark-init"]
+	path = site-lisp/extensions/benchmark-init
+	url = https://github.com/dholm/benchmark-init-el
+[submodule "site-lisp/extensions/nox"]
+	path = site-lisp/extensions/nox
+	url = https://github.com/manateelazycat/nox.git
+[submodule "site-lisp/extensions/dante"]
+	path = site-lisp/extensions/dante
+	url = https://github.com/jyp/dante.git
+[submodule "site-lisp/extensions/exec-path-from-shell"]
+	path = site-lisp/extensions/exec-path-from-shell
+	url = https://github.com/purcell/exec-path-from-shell.git
+[submodule "site-lisp/extensions/haskell-mode"]
+	path = site-lisp/extensions/haskell-mode
+	url = https://github.com/haskell/haskell-mode.git
+[submodule "site-lisp/extensions/markdown-mode"]
+	path = site-lisp/extensions/markdown-mode
+	url = https://github.com/jrblevin/markdown-mode.git
+[submodule "site-lisp/extensions/lua-mode"]
+	path = site-lisp/extensions/lua-mode
+	url = https://github.com/immerrr/lua-mode.git
+[submodule "site-lisp/extensions/coffee-mode"]
+	path = site-lisp/extensions/coffee-mode
+	url = https://github.com/defunkt/coffee-mode.git
+[submodule "site-lisp/extensions/csharp-mode"]
+	path = site-lisp/extensions/csharp-mode
+	url = https://github.com/josteink/csharp-mode.git
+[submodule "site-lisp/extensions/omnisharp-emacs"]
+	path = site-lisp/extensions/omnisharp-emacs
+	url = https://github.com/OmniSharp/omnisharp-emacs.git
+[submodule "site-lisp/extensions/org-brain"]
+	path = site-lisp/extensions/org-brain
+	url = https://github.com/Kungsgeten/org-brain.git
+[submodule "site-lisp/extensions/slime"]
+	path = site-lisp/extensions/slime
+	url = https://github.com/slime/slime.git
+[submodule "site-lisp/extensions/valign"]
+	path = site-lisp/extensions/valign
+	url = https://github.com/casouri/valign.git
+[submodule "site-lisp/extensions/emacs-smart-input-source"]
+	path = site-lisp/extensions/emacs-smart-input-source
+	url = https://github.com/laishulu/emacs-smart-input-source.git
+[submodule "site-lisp/extensions/delete-block"]
+	path = site-lisp/extensions/delete-block
+	url = https://github.com/manateelazycat/delete-block.git
+[submodule "site-lisp/extensions/shift-number"]
+	path = site-lisp/extensions/shift-number
+	url = https://github.com/alezost/shift-number.el.git
+[submodule "site-lisp/extensions/move-text"]
+	path = site-lisp/extensions/move-text
+	url = https://github.com/manateelazycat/move-text.git
+[submodule "site-lisp/extensions/duplicate-line"]
+	path = site-lisp/extensions/duplicate-line
+	url = https://github.com/manateelazycat/duplicate-line.git
+[submodule "site-lisp/extensions/lazy-search"]
+	path = site-lisp/extensions/lazy-search
+	url = https://github.com/manateelazycat/lazy-search.git
+[submodule "site-lisp/extensions/all-the-icons.el"]
+	path = site-lisp/extensions/all-the-icons.el
+	url = https://github.com/domtronn/all-the-icons.el.git
+[submodule "site-lisp/extensions/flex"]
+	path = site-lisp/extensions/flex
+	url = https://github.com/manateelazycat/flex.git
+[submodule "site-lisp/extensions/symbol-overlay"]
+	path = site-lisp/extensions/symbol-overlay
+	url = https://github.com/wolray/symbol-overlay.git
+[submodule "site-lisp/extensions/instant-rename-tag"]
+	path = site-lisp/extensions/instant-rename-tag
+	url = https://github.com/manateelazycat/instant-rename-tag.git
+[submodule "site-lisp/extensions/highlight-matching-tag"]
+	path = site-lisp/extensions/highlight-matching-tag
+	url = https://github.com/manateelazycat/highlight-matching-tag.git
+[submodule "site-lisp/extensions/flyspell-correct"]
+	path = site-lisp/extensions/flyspell-correct
+	url = https://github.com/d12frosted/flyspell-correct.git
+[submodule "site-lisp/extensions/company-mode"]
+	path = site-lisp/extensions/company-mode
+	url = https://github.com/company-mode/company-mode.git
+[submodule "site-lisp/extensions/flycheck"]
+	path = site-lisp/extensions/flycheck
+	url = https://github.com/flycheck/flycheck.git
+[submodule "site-lisp/extensions/lcr"]
+	path = site-lisp/extensions/lcr
+	url = https://github.com/jyp/lcr.git
+[submodule "site-lisp/extensions/yasnippet"]
+	path = site-lisp/extensions/yasnippet
+	url = https://github.com/joaotavora/yasnippet.git
+[submodule "site-lisp/extensions/transient"]
+	path = site-lisp/extensions/transient
+	url = https://github.com/magit/transient.git
+[submodule "site-lisp/extensions/names"]
+	path = site-lisp/extensions/names
+	url = https://github.com/Malabarba/names.git
+[submodule "site-lisp/extensions/dash"]
+	path = site-lisp/extensions/dash
+	url = https://github.com/magnars/dash.el.git
+[submodule "site-lisp/extensions/f"]
+	path = site-lisp/extensions/f
+	url = https://github.com/rejeep/f.el.git
+[submodule "site-lisp/extensions/auto-sudoedit"]
+	path = site-lisp/extensions/auto-sudoedit
+	url = https://github.com/ncaq/auto-sudoedit.git

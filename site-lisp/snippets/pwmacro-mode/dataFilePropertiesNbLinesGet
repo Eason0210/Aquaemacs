@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: DATA_FILE PROPERTIES NB_LINES GET
+# --
+DATA_FILE PROPERTIES NB_LINES GET ( ${1:$filePath}, ${2:nbLines} )
+$0

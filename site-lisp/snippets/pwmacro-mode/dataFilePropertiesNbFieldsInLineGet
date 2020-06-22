@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: DATA_FILE PROPERTIES NB_FIELDS_IN_LINE GET
+# --
+DATA_FILE PROPERTIES NB_FIELDS_IN_LINE GET ( ${1:$filePath}, ${2:$lineNumber}, ${3:nbFieldsInLine} )
+$0

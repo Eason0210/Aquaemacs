@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: TREEVIEW OBJECT SELECT
+# key: objs
+# group: TreeView Object
+# --
+TREEVIEW OBJECT SELECT ( ${1:$objName} )
+$0 

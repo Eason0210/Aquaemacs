@@ -1,0 +1,46 @@
+# -*- mode: snippet -*-
+# name : MSCL temperlate
+# key: temp
+# --
+version "5.0"
+
+
+
+############################### Discriptions ###############################
+
+
+############################### TODO List ##################################
+
+
+###############################VERSIONS#####################################
+# VERSION 0.1 [2020 IR1] Initial release
+
+#################################VARIABLES##################################
+# [Object Names]
+
+# [User options]
+
+# "Error" or "No Error" from previous operations
+DECLARE errorStatus ""
+
+# Counter
+
+# Iterator used for looping
+DECLARE iter
+
+# time check
+DECLARE timer
+
+############################### CODE #######################################
+MACRO CHRONOMETER START
+
+# >>>>>>>>>>>>>>>>>>>>>>>  options setting <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+############################# end of features process ######################
+
+MACRO CHRONOMETER GET ( timer )
+MACRO ECHO ( $timer )
+MACRO END (  )
+
+################################# END ######################################

@@ -93,7 +93,7 @@
 (dolist (hook (list
                'ruby-mode-hook
                'python-mode-hook
-               'swift-mode-hook
+               ;; 'swift-mode-hook
                'go-mode-hook
                'js-mode-hook
                ))
@@ -101,7 +101,7 @@
    hook
    '(lambda ()
       ;; OS Config
-      (when (featurep 'cocoa)
+      (when (eq system-type 'darwin)
         ;; Initialize environment from user's shell to make eshell know every PATH by other shell.
         (require 'exec-path-from-shell)
         (setq exec-path-from-shell-variables '("PATH" "MANPATH" "GEM_PATH"))
@@ -127,11 +127,11 @@
       (flycheck-mode 1))))
 
 ;; Add flycheck for swift.
-(add-hook 'swift-mode-hook
-          (lambda ()
-            (require 'flycheck-swift)
-            (flycheck-swift-setup)
-            ))
+;; (add-hook 'swift-mode-hook
+;;           (lambda ()
+;;             (require 'flycheck-swift)
+;;             (flycheck-swift-setup)
+;;             ))
 
 (provide 'init-flycheck)
 

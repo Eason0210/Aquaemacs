@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: MACRO COMMAND ECHO ( string )
+# --
+MACRO COMMAND ECHO ( "${1:On/Off/Toggle}" )
+$0

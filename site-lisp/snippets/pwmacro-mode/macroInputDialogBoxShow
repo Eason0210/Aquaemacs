@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: MACRO INPUT DIALOG_BOX SHOW
+# key: dlgshow
+# --
+MACRO INPUT DIALOG_BOX SHOW ( ${1:$windowsID}, "Ok", "Cancel", ${2:$okOrCancel}, ${3:VARS,...,...} )
+$0

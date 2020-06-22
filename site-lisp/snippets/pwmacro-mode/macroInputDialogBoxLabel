@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: MACRO INPUT DIALOG_BOX LABEL
+# key: dlglbl
+# --
+MACRO INPUT DIALOG_BOX LABEL ( ${1:$windowsID}, "${2:Text to show}" )
+$0

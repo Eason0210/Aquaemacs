@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: MACRO CHRONOMETER GET ( double )
+# --
+MACRO CHRONOMETER GET ( ${1:timer} )
+$0

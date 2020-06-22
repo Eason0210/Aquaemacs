@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: TREEVIEW OBJECT SELECT NONE
+# key: objsn
+# group: TreeView Object
+# --
+TREEVIEW OBJECT SELECT NONE
+$0

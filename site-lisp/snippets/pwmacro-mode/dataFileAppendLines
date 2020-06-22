@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: DATA_FILE APPEND LINES
+# --
+DATA_FILE APPEND LINES ( ${1:$filePath}, ${2:$stringToAppend} )
+$0

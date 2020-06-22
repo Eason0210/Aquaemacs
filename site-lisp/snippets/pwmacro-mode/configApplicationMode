@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: CONFIG APPLICATION_MODE ( string )
+# --
+CONFIG APPLICATION_MODE ( "${1:Sheet Metal}" )
+$0

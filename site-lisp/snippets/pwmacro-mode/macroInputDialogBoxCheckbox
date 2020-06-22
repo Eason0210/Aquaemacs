@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: MACRO INPUT DIALOG_BOX CHECKBOX
+# key: dlgchb
+# --
+MACRO INPUT DIALOG_BOX CHECKBOX ( ${1:windowsID}, "${2:title of checkbox}","${3:Off}" )
+$0

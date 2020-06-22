@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: MACRO INPUT DIALOG_BOX DEFINE
+# key: dlgdef
+# --
+MACRO INPUT DIALOG_BOX DEFINE ( ${1:windowsID, "${2:windows title}"} )
+$0

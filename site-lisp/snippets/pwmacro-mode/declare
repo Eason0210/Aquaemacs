@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name : DECLARE vars
+# key: dec
+# --
+DECLARE $0

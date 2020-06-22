@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: DATA_FILE CREATE
+# --
+DATA_FILE CREATE ( ${1:filePath}, "${2:Unicode}", "${3:Yes}" )
+$0

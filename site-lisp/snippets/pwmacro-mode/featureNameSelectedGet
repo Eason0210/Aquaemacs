@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: TreeView Feature Name Selected Get
+# key: ftrname
+# group: TreeView Feature
+# --
+TREEVIEW FEATURE NAME SELECTED GET ( ${1:featureNames}, "On", "On")
+$0
