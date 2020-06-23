@@ -83,7 +83,7 @@
 (require 'magit)
 
 ;;; Code:
-(when (featurep 'cocoa)
+(when (eq system-type 'darwin)
   ;; Initialize environment from user's shell to make eshell know every PATH by other shell.
   (require 'exec-path-from-shell)
   (exec-path-from-shell-initialize))
@@ -156,7 +156,7 @@
 
 (defun magit-submodule-add+ (url)
   (interactive "sURL: ")
-  (let ((parent-dir (cadr (split-string (file-name-as-directory lazycat-emacs-extension-dir) (expand-file-name (cdr (project-current)))))))
+  (let ((parent-dir (cadr (split-string (file-name-as-directory Aquaemacs-extension-dir) (expand-file-name (cdr (project-current)))))))
     (magit-submodule-add
      url
      (concat parent-dir (file-name-base url))

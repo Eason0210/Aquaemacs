@@ -202,3 +202,6 @@
 [submodule "auto-sudoedit"]
 	path = site-lisp/extensions/auto-sudoedit
 	url = https://github.com/ncaq/auto-sudoedit.git
+[submodule "magithub"]
+	path = site-lisp/extensions/magithub
+	url = https://github.com/vermiculus/magithub
