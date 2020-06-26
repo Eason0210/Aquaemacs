@@ -83,7 +83,7 @@
 
          (when (eq system-type 'gnu/linux)
            (require 'init-eaf))
-         ;; (require 'init-smart-input-source)
+         (require 'init-smart-input-source)
          (require 'init-rime)
          (require 'init-nox)
          (require 'init-sdcv)           ; Don't remove this line

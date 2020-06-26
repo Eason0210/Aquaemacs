@@ -113,8 +113,11 @@
 (setq default-input-method "rime"
       rime-show-candidate 'posframe)
 
-(setq rime-show-preedit t)
+(setq rime-show-preedit 't)
 (defun rime--display-preedit ())
+;; (setq rime-posframe-fixed-position t)
+
+
 
 
 ;;代码中直接英文，注释和其他模式中根据断言选择输入模式
