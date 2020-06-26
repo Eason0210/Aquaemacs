@@ -205,3 +205,6 @@
 [submodule "magithub"]
 	path = site-lisp/extensions/magithub
 	url = https://github.com/vermiculus/magithub
+[submodule "emacs-rime"]
+	path = site-lisp/extensions/emacs-rime
+	url = https://github.com/DogLooksGood/emacs-rime.git

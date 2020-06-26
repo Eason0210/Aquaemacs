@@ -97,6 +97,17 @@
 ;; enable the /respect/ mode
 (smart-input-source-global-respect-mode t)
 
+;;
+(push 'awesome-tab-backward-tab smart-input-source-preserve-save-triggers)
+(push 'awesome-tab-forward-tab smart-input-source-preserve-save-triggers)
+(push 'awesome-tab-backward-group smart-input-source-preserve-save-triggers)
+(push 'awesome-tab-forward-group smart-input-source-preserve-save-triggers)
+
+(push "C-z" smart-input-source-prefix-override-keys)
+(push "s-x" smart-input-source-prefix-override-keys)
+
+(push 'smex+ smart-input-source-preserve-M-x-commands)
+
 ;; enable the /follow context/ and /inline english/ mode for all buffers
 ;; (smart-input-source-global-follow-context-mode t)
 ;; (smart-input-source-global-inline-english-mode t)
