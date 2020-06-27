@@ -208,3 +208,6 @@
 [submodule "emacs-rime"]
 	path = site-lisp/extensions/emacs-rime
 	url = https://github.com/DogLooksGood/emacs-rime.git
+[submodule "cursor-chg"]
+	path = site-lisp/extensions/cursor-chg
+	url = https://github.com/emacsmirror/cursor-chg.git
