@@ -218,10 +218,20 @@ The test for presence of the car of ELT-CONS is done with `equal'."
                ))
   (add-hook hook
             '(lambda ()
-              (require 'olivetti)
-              (olivetti-mode 1)
-              (olivetti-set-width 120)
-              )))
+               (require 'olivetti)
+               (olivetti-mode 1)
+               (olivetti-set-width 120)
+               (add-hook 'window-configuration-change-hook
+                         #'(lambda ()
+                             (setq-local my-posframe-offset
+                                         (cond
+                                          ((not olivetti-mode) 0)
+                                          ((<= (frame-width) olivetti-body-width)  0)
+                                          ((> (frame-width) olivetti-body-width)
+                                           (* (/ (- (frame-width) olivetti-body-width)
+                                                 2)
+                                              13))))))
+               )))
 
 (provide 'init-mode)
 
