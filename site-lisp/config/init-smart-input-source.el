@@ -95,18 +95,16 @@
   (setq-default smart-input-source-other "im.rime.inputmethod.Squirrel.Rime"))
 
 ;; enable the /respect/ mode
+(add-to-list 'smart-input-source-prefix-override-keys "C-z")
+(add-to-list 'smart-input-source-prefix-override-keys "s-x")
+(add-to-list 'smart-input-source-preserve-save-triggers 'awesome-tab-backward-tab)
+(add-to-list 'smart-input-source-preserve-save-triggers 'awesome-tab-forward-tab)
+(add-to-list 'smart-input-source-preserve-save-triggers 'awesome-tab-backward-group)
+(add-to-list 'smart-input-source-preserve-save-triggers 'awesome-tab-forward-group)
+
 (smart-input-source-global-respect-mode t)
 
-;;
-(push 'awesome-tab-backward-tab smart-input-source-preserve-save-triggers)
-(push 'awesome-tab-forward-tab smart-input-source-preserve-save-triggers)
-(push 'awesome-tab-backward-group smart-input-source-preserve-save-triggers)
-(push 'awesome-tab-forward-group smart-input-source-preserve-save-triggers)
-
-(push "C-z" smart-input-source-prefix-override-keys)
-(push "s-x" smart-input-source-prefix-override-keys)
-
-(push 'smex+ smart-input-source-preserve-M-x-commands)
+(add-to-list 'smart-input-source-preserve-save-triggers 'smex+)
 
 ;; enable the /follow context/ and /inline english/ mode for all buffers
 ;; (smart-input-source-global-follow-context-mode t)
@@ -120,7 +118,7 @@
 
 (add-hook 'smart-input-source-set-other-hook
           (lambda ()
-            (setq current-input-method "rime")
+            (setq current-input-method "rime-smart")
             ))
 
 

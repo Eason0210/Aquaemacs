@@ -7,10 +7,14 @@
   (setq mac-pass-command-to-system nil))
 
 (when (eq system-type 'windows-nt)
+  ;; (setq w32-pass-lwindow-to-system nil)
+  ;; (setq w32-lwindow-modifier 'super)
+  ;; (setq w32-pass-rwindow-to-system nil)
+  ;; (setq w32-rwindow-modifier 'super)
+  ;; (w32-register-hot-key [s-])
+
   (setq w32-pass-lwindow-to-system nil)
-  (setq w32-lwindow-modifier 'super)
-  (setq w32-pass-rwindow-to-system nil)
-  (setq w32-rwindow-modifier 'super)
+  (setq w32-lwindow-modifier nil)
   (w32-register-hot-key [s-])
 
   (setq w32-pass-apps-to-system nil)
@@ -335,7 +339,7 @@
  '(
    ("s-n" . aweshell-new)
    ("s-h" . aweshell-toggle)
-   ("s-x s-x" . aweshell-dedicated-toggle)
+   ("s-x x" . aweshell-dedicated-toggle)
    )
  "aweshell")
 ;;; ### Dired ###
