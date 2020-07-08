@@ -97,29 +97,30 @@
 ;; enable the /respect/ mode
 (add-to-list 'smart-input-source-prefix-override-keys "C-z")
 (add-to-list 'smart-input-source-prefix-override-keys "s-x")
-(add-to-list 'smart-input-source-preserve-save-triggers 'awesome-tab-backward-tab)
-(add-to-list 'smart-input-source-preserve-save-triggers 'awesome-tab-forward-tab)
-(add-to-list 'smart-input-source-preserve-save-triggers 'awesome-tab-backward-group)
-(add-to-list 'smart-input-source-preserve-save-triggers 'awesome-tab-forward-group)
 
+;; change cursor color
+(smart-input-source-global-cursor-color-mode t)
+(setq smart-input-source-other-cursor-color "orange")
+
+;; enable the /respect/ mode
 (smart-input-source-global-respect-mode t)
 
-(add-to-list 'smart-input-source-preserve-save-triggers 'smex+)
+;; enable the /follow context/ mode for all buffers
+(smart-input-source-global-follow-context-mode t)
+;; enable the /inline english/ mode for all buffers
+(smart-input-source-global-inline-mode t)
 
-;; enable the /follow context/ and /inline english/ mode for all buffers
-;; (smart-input-source-global-follow-context-mode t)
-;; (smart-input-source-global-inline-english-mode t)
 
 ;; Input source specific cursor color
-(add-hook 'smart-input-source-set-english-hook
-          (lambda ()
-            (setq current-input-method nil)
-            ))
+;; (add-hook 'smart-input-source-set-english-hook
+;;           (lambda ()
+;;             (setq current-input-method nil)
+;;             ))
 
-(add-hook 'smart-input-source-set-other-hook
-          (lambda ()
-            (setq current-input-method "rime-smart")
-            ))
+;; (add-hook 'smart-input-source-set-other-hook
+;;           (lambda ()
+;;             (setq current-input-method "rime")
+;;             ))
 
 
 (provide 'init-smart-input-source)

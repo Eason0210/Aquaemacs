@@ -85,7 +85,7 @@
 ;;; Code:
 
 (when (eq system-type 'darwin)
-  (setq fonts '("Monaco" "冬青黑体简体中文"))
+  (setq fonts '("SF Mono" "冬青黑体简体中文"))
   (set-face-attribute 'default nil :font
                     (format "%s:pixelsize=%d" (car fonts) 16))
   ;; (setq face-font-rescale-alist '(("STKaiti". 1.2)))
