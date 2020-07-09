@@ -130,6 +130,7 @@
                'llvm-mode-hook
                'conf-toml-mode-hook
                'nxml-mode-hook
+               'ahk-mode-hook
                ))
   (add-hook hook (lambda () (display-line-numbers-mode))))
 
