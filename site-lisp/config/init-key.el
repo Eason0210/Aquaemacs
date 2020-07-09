@@ -7,15 +7,15 @@
   (setq mac-pass-command-to-system nil))
 
 (when (eq system-type 'windows-nt)
-  ;; (setq w32-pass-lwindow-to-system nil)
-  ;; (setq w32-lwindow-modifier 'super)
-  ;; (setq w32-pass-rwindow-to-system nil)
-  ;; (setq w32-rwindow-modifier 'super)
-  ;; (w32-register-hot-key [s-])
-
   (setq w32-pass-lwindow-to-system nil)
-  (setq w32-lwindow-modifier nil)
+  (setq w32-lwindow-modifier 'super)
+  (setq w32-pass-rwindow-to-system nil)
+  (setq w32-rwindow-modifier 'super)
   (w32-register-hot-key [s-])
+
+  ;; (setq w32-pass-lwindow-to-system nil)
+  ;; (setq w32-lwindow-modifier nil)
+  ;; (w32-register-hot-key [s-])
 
   (setq w32-pass-apps-to-system nil)
   (define-key key-translation-map (kbd "<apps>") (kbd "C-\\"))

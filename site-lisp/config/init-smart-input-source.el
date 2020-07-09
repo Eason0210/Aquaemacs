@@ -110,19 +110,6 @@
 ;; enable the /inline english/ mode for all buffers
 (smart-input-source-global-inline-mode t)
 
-
-;; Input source specific cursor color
-;; (add-hook 'smart-input-source-set-english-hook
-;;           (lambda ()
-;;             (setq current-input-method nil)
-;;             ))
-
-;; (add-hook 'smart-input-source-set-other-hook
-;;           (lambda ()
-;;             (setq current-input-method "rime")
-;;             ))
-
-
 (provide 'init-smart-input-source)
 
 ;;; init-smart-input-source.el ends here
