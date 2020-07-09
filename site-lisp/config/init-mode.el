@@ -171,6 +171,7 @@ The test for presence of the car of ELT-CONS is done with `equal'."
                     ("\\.bc$" . hexl-mode)
                     ("\\.pwmacro" . pwmacro-mode)
                     ("\\.cs\\'" . csharp-mode)
+                    ("\\.ahk\\'" . ahk-mode)
                     ))
   (add-to-alist 'auto-mode-alist elt-cons))
 
@@ -203,6 +204,7 @@ The test for presence of the car of ELT-CONS is done with `equal'."
 (autoload 'pdf-view-mode "init-pdf-tools")
 (autoload 'llvm-mode "llvm-mode")
 (autoload 'csharp-mode "init-csharp")
+(autoload 'ahk-mode "ahk-mode")
 
 ;;; ### Auto-fill ###
 ;;; --- 自动换行
@@ -221,16 +223,6 @@ The test for presence of the car of ELT-CONS is done with `equal'."
                (require 'olivetti)
                (olivetti-mode 1)
                (olivetti-set-width 120)
-               ;; (add-hook 'window-configuration-change-hook
-               ;;           #'(lambda ()
-               ;;               (setq-local my-posframe-offset
-               ;;                           (cond
-               ;;                            ((not olivetti-mode) 0)
-               ;;                            ((<= (frame-width) olivetti-body-width)  0)
-               ;;                            ((> (frame-width) olivetti-body-width)
-               ;;                             (* (/ (- (frame-width) olivetti-body-width)
-               ;;                                   2)
-               ;;                                13))))))
                )))
 
 (provide 'init-mode)

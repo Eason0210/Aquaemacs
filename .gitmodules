@@ -211,3 +211,6 @@
 [submodule "cursor-chg"]
 	path = site-lisp/extensions/cursor-chg
 	url = https://github.com/emacsmirror/cursor-chg.git
+[submodule "ahk-mode"]
+	path = site-lisp/extensions/ahk-mode
+	url = https://github.com/ralesi/ahk-mode.git
