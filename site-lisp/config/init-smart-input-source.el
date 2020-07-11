@@ -92,11 +92,14 @@
 
 (when (eq system-type 'darwin)
   (setq smart-input-source-english "com.apple.keylayout.ABC")
-  (setq-default smart-input-source-other "im.rime.inputmethod.Squirrel.Rime"))
+  (setq-default smart-input-source-other "im.rime.inputmethod.Squirrel.Rime")
+  (setq-default smart-input-source-do-set
+                (lambda(source) (start-process "set-input-source" nil "macism" source "10000"))))
 
 ;; enable the /respect/ mode
 (add-to-list 'smart-input-source-prefix-override-keys "C-z")
 (add-to-list 'smart-input-source-prefix-override-keys "s-x")
+(add-to-list 'smart-input-source-prefix-override-keys "s-j")
 
 ;; change cursor color
 (smart-input-source-global-cursor-color-mode t)
