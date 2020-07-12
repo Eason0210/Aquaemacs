@@ -13,10 +13,6 @@
   (setq w32-rwindow-modifier 'super)
   (w32-register-hot-key [s-])
 
-  ;; (setq w32-pass-lwindow-to-system nil)
-  ;; (setq w32-lwindow-modifier nil)
-  ;; (w32-register-hot-key [s-])
-
   (setq w32-pass-apps-to-system nil)
   (define-key key-translation-map (kbd "<apps>") (kbd "C-\\"))
   )

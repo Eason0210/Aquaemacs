@@ -100,6 +100,7 @@
 (add-to-list 'smart-input-source-prefix-override-keys "C-z")
 (add-to-list 'smart-input-source-prefix-override-keys "s-x")
 (add-to-list 'smart-input-source-prefix-override-keys "s-j")
+(add-to-list 'smart-input-source-prefix-override-keys "C-.")
 
 ;; change cursor color
 (smart-input-source-global-cursor-color-mode t)
