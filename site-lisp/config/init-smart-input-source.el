@@ -102,6 +102,12 @@
 (add-to-list 'smart-input-source-prefix-override-keys "s-j")
 (add-to-list 'smart-input-source-prefix-override-keys "C-.")
 
+;; switch to English in i-search
+(setq smart-input-source-preserve-go-english-triggers
+        (list 'isearch-forward 'isearch-backward))
+  (setq smart-input-source-preserve-restore-triggers
+        (list 'isearch-exit 'isearch-abort))
+
 ;; change cursor color
 (smart-input-source-global-cursor-color-mode t)
 (setq smart-input-source-other-cursor-color "orange")
