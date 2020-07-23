@@ -1,13 +1,13 @@
-;;; init-smart-input-source.el --- smart-input-source configuration
+;;; init-smart-input-source.el --- sis configuration
 
 ;; Filename: init-smart-input-source.el
-;; Description: smart-input-source configuration
+;; Description: sis configuration
 ;; Author: Eason Huang <aqua0210@163.com>
 ;; Maintainer: Eason Huang <aqua0210@163.com>
 ;; Copyright (C) 2020, Eason Huang, all rights reserved.
 ;; Created: 2020-06-19 19:26:00
 ;; Version: 0.1
-;; Last-Updated: 2020-06-19 19:26:08
+;; Last-Updated: 2020-07-23 11:03:02
 ;;           By: Eason Huang
 ;; Keywords:
 ;; Compatibility: GNU Emacs 28.0.50
@@ -38,7 +38,7 @@
 
 ;;; Commentary:
 ;;
-;; smart-input-source configuration
+;; sis configuration
 ;;
 
 ;;; Installation:
@@ -63,7 +63,8 @@
 ;;
 
 ;;; Change log:
-;;
+;; 2020-07-23
+;;      * Rename smart-input-source as sis
 ;; 2020/06/19
 ;;      * First released.
 ;;
@@ -81,45 +82,42 @@
 ;;; Require
 
 
-(require 'smart-input-source)
+(require 'sis)
 
 ;;; Code:
 
 (when (eq system-type 'windows-nt)
-  (setq smart-input-source-external-ism "im-select.exe")
-  (setq smart-input-source-english "1033")
-  (setq-default smart-input-source-other "2052"))
+  (sis-ism-lazyman-config "1033" "2052" 'im-select))
 
 (when (eq system-type 'darwin)
-  (setq smart-input-source-english "com.apple.keylayout.ABC")
-  (setq-default smart-input-source-other "im.rime.inputmethod.Squirrel.Rime")
-  (setq-default smart-input-source-do-set
-                (lambda(source) (start-process "set-input-source" nil "macism" source "10000"))))
+  (sis-ism-lazyman-config
+   "com.apple.keylayout.ABC" "im.rime.inputmethod.Squirrel.Rime"))
 
 ;; enable the /respect/ mode
-(add-to-list 'smart-input-source-prefix-override-keys "C-z")
-(add-to-list 'smart-input-source-prefix-override-keys "s-x")
-(add-to-list 'smart-input-source-prefix-override-keys "s-j")
-(add-to-list 'smart-input-source-prefix-override-keys "C-.")
+(add-to-list 'sis-prefix-override-keys "C-z")
+(add-to-list 'sis-prefix-override-keys "s-x")
+(add-to-list 'sis-prefix-override-keys "s-j")
+(add-to-list 'sis-prefix-override-keys "C-.")
 
 ;; switch to English in i-search
-(setq smart-input-source-preserve-go-english-triggers
-        (list 'isearch-forward 'isearch-backward))
-  (setq smart-input-source-preserve-restore-triggers
-        (list 'isearch-exit 'isearch-abort))
+(setq sis-preserve-go-english-triggers
+      (list 'isearch-forward 'isearch-backward))
+(setq sis-preserve-restore-triggers
+      (list 'isearch-exit 'isearch-abort))
 
 ;; change cursor color
-(smart-input-source-global-cursor-color-mode t)
-(setq smart-input-source-other-cursor-color "orange")
+(sis-global-cursor-color-mode t)
+(setq sis-default-cursor-color "red")
+(setq sis-other-cursor-color "orange")
 
 ;; enable the /respect/ mode
-(smart-input-source-global-respect-mode t)
+(sis-global-respect-mode t)
 
 ;; enable the /follow context/ mode for all buffers
-(smart-input-source-global-follow-context-mode t)
+(sis-global-follow-context-mode t)
 ;; enable the /inline english/ mode for all buffers
-(smart-input-source-global-inline-mode t)
+(sis-global-inline-mode t)
 
-(provide 'init-smart-input-source)
+(provide 'init-smart-input-source )
 
 ;;; init-smart-input-source.el ends here

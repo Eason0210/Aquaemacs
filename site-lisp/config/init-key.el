@@ -669,7 +669,7 @@
 
 (lazy-load-global-keys
  '(
-   ("C-\\" . smart-input-source-switch)
+   ("C-\\" . sis-switch)
    )
  "init-smart-input-source")
 
