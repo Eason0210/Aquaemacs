@@ -669,8 +669,8 @@
 
 (lazy-load-global-keys
  '(
-   ("C-\\" . sis-switch)
+   ("C-\\" . imbot-switch)
    )
- "init-smart-input-source")
+ "init-imbot.el")
 
 (provide 'init-key)
