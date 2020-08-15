@@ -85,12 +85,13 @@
 ;;; Code:
 
 (when (eq system-type 'darwin)
-  (defun imbot--activate-im ()
-    (call-process imbot-command nil nil nil "im.rime.inputmethod.Squirrel.Rime"))
-  (defun imbot--deactivate-im ()
-    (call-process imbot-command nil nil nil "com.apple.keylayout.ABC")))
-
-(imbot-mode)
+  (setq imbot-command "macism")
+  (setq imbot-arg-cn "im.rime.inputmethod.Squirrel.Rime")
+  (setq imbot-arg-en "com.apple.keylayout.ABC"))
+(when (eq system-type 'gnu/linux)
+  (setq imbot-command "fcitx-remote")
+  (setq imbot-arg-cn "-o")
+  (setq imbot-arg-en "-c"))
 
 (provide 'init-imbot )
 
