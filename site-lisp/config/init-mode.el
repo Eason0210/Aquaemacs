@@ -169,7 +169,8 @@ The test for presence of the car of ELT-CONS is done with `equal'."
                     ("\\.h$" . c++-mode)
                     ("\\.ll$" . llvm-mode)
                     ("\\.bc$" . hexl-mode)
-                    ("\\.pwmacro" . pwmacro-mode)
+                    ("\\.pwmacro$" . mscl-mode)
+                    ("\\.pwxmacro$" . mscl-mode)
                     ("\\.cs\\'" . csharp-mode)
                     ("\\.ahk\\'" . ahk-mode)
                     ))
@@ -205,6 +206,7 @@ The test for presence of the car of ELT-CONS is done with `equal'."
 (autoload 'llvm-mode "llvm-mode")
 (autoload 'csharp-mode "init-csharp")
 (autoload 'ahk-mode "ahk-mode")
+(autoload 'mscl-mode "mscl-mode" "MSCL editing mode." t)
 
 ;;; ### Auto-fill ###
 ;;; --- 自动换行

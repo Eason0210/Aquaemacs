@@ -106,7 +106,7 @@
                'markdown-mode-hook
                'llvm-mode-hook
                'conf-toml-mode-hook
-               'pwmacro-mode-hook
+               'mscl-mode-hook
                'csharp-mode-hook
                ))
   (add-hook hook '(lambda () (awesome-pair-mode 1))))

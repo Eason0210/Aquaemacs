@@ -55,7 +55,6 @@
     (require 'init-key)
     (require 'init-vi-navigate)
     (require 'init-performance)
-    (require 'init-pwmacro-mode)
     (require 'init-common-lisp)
     ;; 可以延后加载的
     (run-with-idle-timer
