@@ -173,6 +173,7 @@ The test for presence of the car of ELT-CONS is done with `equal'."
                     ("\\.pwxmacro$" . mscl-mode)
                     ("\\.cs\\'" . csharp-mode)
                     ("\\.ahk\\'" . ahk-mode)
+                    ("\\.bas\\'" . basic-mode)
                     ))
   (add-to-alist 'auto-mode-alist elt-cons))
 
@@ -207,6 +208,7 @@ The test for presence of the car of ELT-CONS is done with `equal'."
 (autoload 'csharp-mode "init-csharp")
 (autoload 'ahk-mode "ahk-mode")
 (autoload 'mscl-mode "mscl-mode" "MSCL editing mode." t)
+(autoload 'basic-mode "basic-mode" "Major mode for editing BASIC code." t)
 
 ;;; ### Auto-fill ###
 ;;; --- 自动换行

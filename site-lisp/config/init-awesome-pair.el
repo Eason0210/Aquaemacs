@@ -108,6 +108,7 @@
                'conf-toml-mode-hook
                'mscl-mode-hook
                'csharp-mode-hook
+               'basic-mode-hook
                ))
   (add-hook hook '(lambda () (awesome-pair-mode 1))))
 

@@ -217,3 +217,9 @@
 [submodule "imbot"]
 	path = site-lisp/extensions/imbot
 	url = https://github.com/Eason0210/imbot.git
+[submodule "mscl-mode"]
+	path = site-lisp/extensions/mscl-mode
+	url = https://github.com/Eason0210/mscl-mode.git
+[submodule "basic-mode"]
+	path = site-lisp/extensions/basic-mode
+	url = https://github.com/dykstrom/basic-mode.git
