@@ -173,6 +173,7 @@ The test for presence of the car of ELT-CONS is done with `equal'."
                     ("\\.cs\\'" . csharp-mode)
                     ("\\.ahk\\'" . ahk-mode)
                     ("\\.bas\\'" . basic-mode)
+                    ("\\.mmd\\'" . mermaid-mode)
                     ))
   (add-to-alist 'auto-mode-alist elt-cons))
 
@@ -208,6 +209,7 @@ The test for presence of the car of ELT-CONS is done with `equal'."
 (autoload 'ahk-mode "ahk-mode")
 (autoload 'mscl-mode "mscl-mode" "MSCL editing mode." t)
 (autoload 'basic-mode "basic-mode" "Major mode for editing BASIC code." t)
+(autoload 'mermaid-mode "mermaid-mode")
 
 ;;; ### Auto-fill ###
 ;;; --- 自动换行

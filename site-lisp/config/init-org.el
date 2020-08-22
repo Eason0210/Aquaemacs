@@ -130,6 +130,9 @@
                     (setq org-brain-title-max-length 12)
                     (setq org-brain-include-file-entries nil
                           org-brain-file-entries-use-title nil)
+
+                    ;; enable ob-mermaid
+                    (require 'ob-mermaid)
                     )))
 
 (provide 'init-org)

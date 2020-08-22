@@ -223,3 +223,15 @@
 [submodule "basic-mode"]
 	path = site-lisp/extensions/basic-mode
 	url = https://github.com/dykstrom/basic-mode.git
+[submodule "mermaid-mode"]
+	path = site-lisp/extensions/mermaid-mode
+	url = https://github.com/abrochard/mermaid-mode.git
+[submodule "ob-mermaid"]
+	path = site-lisp/extensions/ob-mermaid
+	url = https://github.com/arnm/ob-mermaid.git
+[submodule "js2-refactor"]
+	path = site-lisp/extensions/js2-refactor
+	url = https://github.com/Eason0210/js2-refactor.git
+[submodule "multiple-cursors"]
+	path = site-lisp/extensions/multiple-cursors
+	url = https://github.com/Eason0210/multiple-cursors.git
