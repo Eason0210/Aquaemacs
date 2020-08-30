@@ -95,6 +95,8 @@
   (define-key org-mode-map (kbd "C-,") nil)     ;取消设置org-mode的按键绑定
   (define-key org-mode-map (kbd "M-h") nil)     ;取消设置org-mode的按键绑定
 
+  (define-key org-mode-map (kbd "C-c a") 'org-agenda)
+
   (defun org-export-docx ()
     (interactive)
     (let ((docx-file (concat (file-name-sans-extension (buffer-file-name)) ".docx"))
