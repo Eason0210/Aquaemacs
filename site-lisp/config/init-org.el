@@ -95,7 +95,7 @@
   (define-key org-mode-map (kbd "C-,") nil)     ;取消设置org-mode的按键绑定
   (define-key org-mode-map (kbd "M-h") nil)     ;取消设置org-mode的按键绑定
 
-  (define-key org-mode-map (kbd "C-c a") 'org-agenda)
+  (require 'init-org-gtd)
 
   (defun org-export-docx ()
     (interactive)

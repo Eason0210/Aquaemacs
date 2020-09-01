@@ -235,3 +235,9 @@
 [submodule "multiple-cursors"]
 	path = site-lisp/extensions/multiple-cursors
 	url = https://github.com/Eason0210/multiple-cursors.git
+[submodule "org-gtd"]
+	path = site-lisp/extensions/org-gtd
+	url = https://github.com/Eason0210/org-gtd.git
+[submodule "org-agenda-property"]
+	path = site-lisp/extensions/org-agenda-property
+	url = https://github.com/Malabarba/org-agenda-property.git
