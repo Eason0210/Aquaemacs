@@ -106,9 +106,9 @@
 
 (org-edna-load)
 
-(define-key org-mode-map (kbd "C-c a") 'org-agenda)
-(define-key org-mode-map (kbd "C-c d c") 'org-gtd-capture)  ;; add item to inbox
-(define-key org-mode-map (kbd "C-c d a") 'org-agenda-list) ;; see what's on your plate today
+;; (define-key org-mode-map (kbd "C-c a") 'org-agenda)
+;; (define-key org-mode-map (kbd "C-c d c") 'org-gtd-capture)  ;; add item to inbox
+;; (define-key org-mode-map (kbd "C-c d a") 'org-agenda-list) ;; see what's on your plate today
 (define-key org-mode-map (kbd "C-c d p") 'org-gtd-process-inbox) ;; process entire inbox
 (define-key org-mode-map (kbd "C-c d n") 'org-gtd-show-all-next) ;; see all NEXT items
 (define-key org-mode-map (kbd "C-c d s") 'org-gtd-show-stuck-projects) ;; see projects that don't have a NEXT item

@@ -547,6 +547,9 @@
  '(
    ("s-s" . one-key-menu-org-file)      ;Org 文件
    ("C-c r" . org-remember)             ;Org-remeber
+   ("C-c d a" . org-agenda-list)        ;see what's on your plate today
+   ("C-c d c" . org-gtd-capture)        ;add item to inbox
+   ("C-c a" . org-agenda)
    )
  "init-org-mode")
 ;;; ### String Inflection ###
