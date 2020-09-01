@@ -64,7 +64,7 @@
 
 ;;; Change log:
 ;;
-;; 2020/08/31
+;; 2020/09/01
 ;;      * First released.
 ;;
 
@@ -80,9 +80,10 @@
 
 ;;; Require
 
+(require 'org-gtd)
+
 ;;; Code:
 
-(require 'org-gtd)
 ;;set status for TODO.
 (setq org-todo-keywords
       '((sequence "NEXT(n)" "TODO(t)" "WAIT(w@)" "|" "DONE(d)" "CANCELED(c@)")))
@@ -92,39 +93,28 @@
 (setq org-lowest-priority ?D)
 (setq org-default-priority ?A)
 
-;; where org-gtd will put its files. This value is also the default one.
+;;org-gtd
 (setq org-gtd-directory "~/beorg/")
-;; package: https://github.com/Malabarba/org-org-gtd-property
-;; this is so you can see who an item was delegated to in the org-gtd
-(setq org-org-gtd-property-list '("DELEGATED_TO"))
-;; I think this makes the org-gtd easier to read
-(setq org-org-gtd-property-position 'next-line)
+;; package: https://github.com/Malabarba/org-agenda-property
+;; this is so you can see who an item was delegated to in the agenda
+(setq org-agenda-property-list '("DELEGATED_TO"))
+;; I think this makes the agenda easier to read
+(setq org-agenda-property-position 'next-line)
 ;; package: https://www.nongnu.org/org-edna-el/
 ;; org-edna is used to make sure that when a project task gets DONE,
 ;; the next TODO is automatically changed to NEXT.
 (setq org-edna-use-inheritance t)
-
 (org-edna-load)
 
-;; (define-key org-mode-map (kbd "C-c a") 'org-agenda)
-;; (define-key org-mode-map (kbd "C-c d c") 'org-gtd-capture)  ;; add item to inbox
-;; (define-key org-mode-map (kbd "C-c d a") 'org-agenda-list) ;; see what's on your plate today
-(define-key org-mode-map (kbd "C-c d p") 'org-gtd-process-inbox) ;; process entire inbox
-(define-key org-mode-map (kbd "C-c d n") 'org-gtd-show-all-next) ;; see all NEXT items
-(define-key org-mode-map (kbd "C-c d s") 'org-gtd-show-stuck-projects) ;; see projects that don't have a NEXT item
-;; the keybinding to hit when you're done editing an item in the processing phase
-(define-key org-mode-map (kbd "C-c c") 'org-gtd-clarify-finalize)
-
-
-;; because we need to add the org-gtd directory to the org-gtd files
-;; use as-is if you don't have an existing org-org-gtd setup
+;;org-agenda
+;; after org-gtd, because we need to add the org-gtd directory to the agenda files
+;; use as-is if you don't have an existing org-agenda setup
 ;; otherwise push the directory to the existing list
-(setq org-org-gtd-files `(,org-gtd-directory))
+(setq org-agenda-files `(,org-gtd-directory))
 ;; a useful view to see what can be accomplished today
-(setq org-org-gtd-custom-commands '(("g" "Scheduled today and all NEXT items"
-                                     ((org-gtd "" ((org-org-gtd-span 1))) (todo "NEXT")))))
-
-
+(setq org-agenda-custom-commands '(("g" "Scheduled today and all NEXT items"
+                                    ((agenda "" ((org-agenda-span 1))) (todo "NEXT")))))
+;;org-capture
 ;; note that org-gtd has to be loaded before this
 ;; use as-is if you don't have an existing set of org-capture templates
 ;; otherwise add to existing setup
@@ -137,5 +127,6 @@
                                entry (file ,(org-gtd--path org-gtd-inbox-file-basename))
                                "* %?\n%U\n\n  %i\n  %a"
                                :kill-buffer t)))
+
 (provide 'init-org-gtd)
 ;;; init-agenda.el ends here

@@ -547,9 +547,13 @@
  '(
    ("s-s" . one-key-menu-org-file)      ;Org 文件
    ("C-c r" . org-remember)             ;Org-remeber
-   ("C-c d a" . org-agenda-list)        ;see what's on your plate today
-   ("C-c d c" . org-gtd-capture)        ;add item to inbox
    ("C-c a" . org-agenda)
+   ("C-c d c" . org-gtd-capture) ;add item to inbox
+   ("C-c d a" . org-agenda-list) ;see what's on your plate today
+   ("C-c d p" . org-gtd-process-inbox) ;process entire inbox
+   ("C-c d n" . org-gtd-show-all-next) ;see all NEXT items
+   ("C-c d s" . org-gtd-show-stuck-projects) ;see projects that don't have a NEXT item
+   ("C-c c" . org-gtd-clarify-finalize) ;hit when you're done editing an item in the processing phase
    )
  "init-org-mode")
 ;;; ### String Inflection ###
