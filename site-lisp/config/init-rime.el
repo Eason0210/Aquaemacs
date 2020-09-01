@@ -133,6 +133,12 @@
    ("M-h" . rime--escape))
  rime-active-mode-map)
 
+;; toggle to English when using ace-jump
+(add-hook 'awesome-tab-ace-jump-hook
+          (lambda ()
+            (if (equal current-input-method "rime")
+                (toggle-input-method))))
+
 (provide 'init-rime)
 
 ;;; init-rime.el ends here
