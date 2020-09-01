@@ -93,7 +93,7 @@
 (setq org-lowest-priority ?D)
 (setq org-default-priority ?A)
 
-;;org-gtd
+;;;org-gtd
 (setq org-gtd-directory "~/beorg/")
 ;; package: https://github.com/Malabarba/org-agenda-property
 ;; this is so you can see who an item was delegated to in the agenda
@@ -106,7 +106,13 @@
 (setq org-edna-use-inheritance t)
 (org-edna-load)
 
-;;org-agenda
+;;;org-agenda
+(setq org-agenda-restore-windows-after-quit t)
+(setq org-agenda-sticky t)
+(setq org-agenda-window-setup 'other-window)
+(setq org-agenda-skip-deadline-if-done t)
+(setq org-agenda-skip-scheduled-if-done t)
+(setq org-agenda-start-on-weekday nil)
 ;; after org-gtd, because we need to add the org-gtd directory to the agenda files
 ;; use as-is if you don't have an existing org-agenda setup
 ;; otherwise push the directory to the existing list
@@ -114,7 +120,10 @@
 ;; a useful view to see what can be accomplished today
 (setq org-agenda-custom-commands '(("g" "Scheduled today and all NEXT items"
                                     ((agenda "" ((org-agenda-span 1))) (todo "NEXT")))))
-;;org-capture
+;;;org-capture
+(setq org-directory "~/beorg/orgnotes/")
+(setq org-default-notes-file (concat org-directory "notes.org"))
+
 ;; note that org-gtd has to be loaded before this
 ;; use as-is if you don't have an existing set of org-capture templates
 ;; otherwise add to existing setup
@@ -127,6 +136,22 @@
                                entry (file ,(org-gtd--path org-gtd-inbox-file-basename))
                                "* %?\n%U\n\n  %i\n  %a"
                                :kill-buffer t)))
+
+;;;Calendar, dates, times
+(setq calendar-week-start-day 1) ;; Monday
+(add-hook 'today-visible-calendar-hook 'calendar-mark-today)
+
+;;;; Action Tags
+(setq org-tag-alist '(("@home" . ?h)
+                      ("@work" . ?w)
+                      ("@nonet" . ?n)
+                      ("code")))
+
+;;;; Refiling
+(setq org-refile-use-outline-path 'file)
+(setq org-outline-path-complete-in-steps nil)
+(setq org-refile-allow-creating-parent-nodes t)
+(setq org-log-refile 'time)
 
 (provide 'init-org-gtd)
 ;;; init-agenda.el ends here
