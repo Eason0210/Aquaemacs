@@ -90,7 +90,7 @@
 (with-eval-after-load 'org
   (setq org-odt-preferred-output-format "docx") ;ODT转换格式默认为docx
   (setq org-startup-folded nil)                 ;默认展开内容
-  ;; (setq org-startup-indented t)                 ;默认缩进内容
+  (setq org-startup-indented t)                 ;默认缩进内容
 
   (define-key org-mode-map (kbd "C-,") nil)     ;取消设置org-mode的按键绑定
   (define-key org-mode-map (kbd "M-h") nil)     ;取消设置org-mode的按键绑定
@@ -114,9 +114,6 @@
                'org-mode-hook
                ))
   (add-hook hook '(lambda ()
-                    (require 'valign)
-                    (valign-mode)
-
                     ;;Org-brain
                     (require 'org-brain)
                     (setq org-brain-path "~/Org/brain")
