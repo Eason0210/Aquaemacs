@@ -241,3 +241,9 @@
 [submodule "org-agenda-property"]
 	path = site-lisp/extensions/org-agenda-property
 	url = https://github.com/Malabarba/org-agenda-property.git
+[submodule "company-tabnine"]
+	path = site-lisp/extensions/company-tabnine
+	url = https://github.com/TommyX12/company-tabnine.git
+[submodule "unicode-escape"]
+	path = site-lisp/extensions/unicode-escape
+	url = https://github.com/Eason0210/unicode-escape.git
