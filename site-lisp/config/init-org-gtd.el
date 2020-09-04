@@ -94,7 +94,7 @@
 (setq org-default-priority ?A)
 
 ;;;org-gtd
-(setq org-gtd-directory "~/beorg/")
+(setq org-gtd-directory "~/org/gtd/")
 ;; package: https://github.com/Malabarba/org-agenda-property
 ;; this is so you can see who an item was delegated to in the agenda
 (setq org-agenda-property-list '("DELEGATED_TO"))
@@ -121,7 +121,7 @@
 (setq org-agenda-custom-commands '(("g" "Scheduled today and all NEXT items"
                                     ((agenda "" ((org-agenda-span 1))) (todo "NEXT")))))
 ;;;org-capture
-(setq org-directory "~/beorg/orgnotes/")
+(setq org-directory "~/org/")
 (setq org-default-notes-file (concat org-directory "notes.org"))
 
 ;; note that org-gtd has to be loaded before this

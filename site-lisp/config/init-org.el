@@ -116,7 +116,7 @@
   (add-hook hook '(lambda ()
                     ;;Org-brain
                     (require 'org-brain)
-                    (setq org-brain-path "~/Org/brain")
+                    (setq org-brain-path "~/org/brain")
 
                     (define-key org-mode-map (kbd "C-c b") org-brain-prefix-map)
                     (setq org-id-track-globally t)
