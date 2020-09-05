@@ -554,6 +554,8 @@
    ("C-c d n" . org-gtd-show-all-next) ;see all NEXT items
    ("C-c d s" . org-gtd-show-stuck-projects) ;see projects that don't have a NEXT item
    ("C-c c" . org-gtd-clarify-finalize) ;hit when you're done editing an item in the processing phase
+   ("C-c b v" . org-brain-visualize)
+   ("C-c b u" . org-brain-update-id-locations)
    )
  "init-org-mode")
 ;;; ### String Inflection ###
