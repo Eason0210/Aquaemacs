@@ -114,6 +114,7 @@ The test for presence of the car of ELT-CONS is done with `equal'."
                     ("\\.max\\'" . maxima-mode)
                     ("\\.lrc\\'" . emms-lyrics-mode)
                     ("\\.org\\'" . org-mode)
+                    ("\\.org_archive\\'" . org-mode)
                     ("\\.cron\\(tab\\)?\\'" . crontab-mode)
                     ("cron\\(tab\\)?\\." . crontab-mode)
                     ("\\.a90\\'" . intel-hex-mode)
