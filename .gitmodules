@@ -247,3 +247,6 @@
 [submodule "unicode-escape"]
 	path = site-lisp/extensions/unicode-escape
 	url = https://github.com/Eason0210/unicode-escape.git
+[submodule "go-translate"]
+	path = site-lisp/extensions/go-translate
+	url = https://github.com/lorniu/go-translate.git
