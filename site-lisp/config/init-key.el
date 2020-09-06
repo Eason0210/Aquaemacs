@@ -31,6 +31,16 @@
    (";" . sdcv-search-input+))
  "init-sdcv"
  "C-z")
+;;; ### go-translate ###
+;;; --- google 翻译
+(lazy-load-global-keys
+ '(("t" . go-translate)                 ;光标处的单词, buffer显示
+   ("T" . go-translate-popup)           ;光标处的单词, tooltip显示
+   ("s" . go-translate-kill-ring-save)  ;光标处的单词, 保存到 kill-ring
+   ("p" . go-translate-popup-current)   ;直接翻译光标单词, tooltip显示
+   )
+ "init-go-translate"
+ "C-c")
 ;;; ### Insert translated name ###
 (lazy-load-global-keys
  '(
