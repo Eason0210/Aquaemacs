@@ -88,6 +88,8 @@
 (setq go-translate-local-language "zh-CN")
 (setq go-translate-buffer-follow-p t)
 
+(setq go-translate-inputs-function
+      #'go-translate-inputs-current-or-prompt)
 
 (provide 'init-go-translate )
 
