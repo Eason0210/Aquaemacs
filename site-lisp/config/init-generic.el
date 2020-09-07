@@ -134,6 +134,8 @@
       (remq 'process-kill-buffer-query-function
             kill-buffer-query-functions))
 
+(setq word-wrap-by-category t) ; 中英文折行
+
 (provide 'init-generic)
 
 ;;; init-generic.el ends here
