@@ -103,7 +103,9 @@
                     (add-to-list 'nox-server-programs
                                  '((c++-mode c-mode) "clangd"))
                     (add-to-list 'nox-server-programs
-                                '((swift-mode) "sourcekit-lsp"))
+                                 '((swift-mode) "sourcekit-lsp"))
+                    (add-to-list 'nox-server-programs
+                                 '(haskell-mode . ("haskell-language-server-wrapper" "--lsp")))
                     (nox-ensure))))
 (if (eq system-type 'windows-nt)
     (setq nox-python-path "c:/Python38/python.exe"))
