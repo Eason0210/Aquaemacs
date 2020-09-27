@@ -250,3 +250,6 @@
 [submodule "go-translate"]
 	path = site-lisp/extensions/go-translate
 	url = https://github.com/lorniu/go-translate.git
+[submodule "expand-region"]
+	path = site-lisp/extensions/expand-region
+	url = https://github.com/magnars/expand-region.el.git
