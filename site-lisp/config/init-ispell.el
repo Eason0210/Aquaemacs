@@ -85,7 +85,7 @@
 
 (setq ispell-personal-dictionary (expand-file-name "flyspell/.aspell.en.pws" user-emacs-directory))
 
-(setq ispell-extra-args '("--sug-mode=ultra" "--lang=en_US" "--run-together"))
+(setq ispell-extra-args '("--sug-mode=ultra"))
 
 
 (dolist (hook '(text-mode-hook))
