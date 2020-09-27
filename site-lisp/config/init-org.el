@@ -114,6 +114,9 @@
                'org-mode-hook
                ))
   (add-hook hook '(lambda ()
+                    (require 'valign)
+                    (valign-mode)
+
                     ;;Org-brain
                     (require 'org-brain)
                     (setq org-brain-path "~/org/brain")
