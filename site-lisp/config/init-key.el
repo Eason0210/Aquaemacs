@@ -692,4 +692,26 @@
    )
  "init-smart-input-source")
 
+;; multiple-cursors
+(lazy-load-global-keys
+ '(
+   ("C-+" . mc/mark-next-like-this)
+   ("C-_" . mc/mark-previous-like-this)
+   ("C-c m a" . mc/mark-all-like-this)
+   ("C-c m b" . mc/edit-beginnings-of-lines)
+   ("C-c m c" . mc/edit-lines)
+   ("C-c m d" . mc/mark-all-dwim)
+   ("C-c m e" . mc/edit-ends-of-lines)
+   ("C-c m l" . mc/insert-letters)
+   ("C-c m n" . mc/insert-numbers)
+   ("C-c m q" . mc/sort-regions)
+   ("C-c m r" . set-rectangular-region-anchor)
+   ("C-c m s" . mc/mark-next-symbol-like-this)
+   ("C-c m S" . mc/mark-all-symbols-like-this)
+   ("C-c m u" . mc/reverse-regions)
+   ("C-c m w" . mc/mark-next-word-like-this)
+   ("C-c m W" . mc/mark-all-words-like-this)
+   )
+ "multiple-cursors")
+
 (provide 'init-key)
