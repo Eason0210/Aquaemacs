@@ -253,3 +253,9 @@
 [submodule "expand-region"]
 	path = site-lisp/extensions/expand-region
 	url = https://github.com/magnars/expand-region.el.git
+[submodule "org-web-tools"]
+	path = site-lisp/extensions/org-web-tools
+	url = https://github.com/alphapapa/org-web-tools.git
+[submodule "esxml"]
+	path = site-lisp/extensions/esxml
+	url = https://github.com/tali713/esxml.git

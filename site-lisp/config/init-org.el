@@ -135,6 +135,8 @@
 
                     ;; enable ob-mermaid
                     (require 'ob-mermaid)
+
+                    (require 'org-web-tools)
                     )))
 
 (provide 'init-org)
