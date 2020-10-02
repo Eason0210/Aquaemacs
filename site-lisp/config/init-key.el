@@ -253,6 +253,7 @@
 (lazy-load-global-keys
  '(
    ("s-;" . one-key-menu-window-navigation) ;快速窗口导航
+   ("<f6>" . split-window-last-buffer) ; 显示最近的buffer
    )
  "init-window")
 (lazy-load-global-keys
@@ -480,7 +481,7 @@
    ("C-4" . insert-changelog-date)      ;插入日志时间 (%Y/%m/%d)
    ("C-&" . switch-to-messages)         ;跳转到 *Messages* buffer
    ("<f12>" . remove-control-M)
-   ("<f6>" . current-line-move-to-top)  ;移动当前行到窗口顶端
+   ("C-<f7>" . current-line-move-to-top)  ;移动当前行到窗口顶端
    ("<f7>" . recenter)                  ;移动当前行到窗口中间
    )
  "lazycat-toolkit")
