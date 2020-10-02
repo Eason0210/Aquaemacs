@@ -66,7 +66,7 @@
 ;;; --- 工具函数
 (lazy-load-set-keys
  '(
-   ("s-c o" . one-key-menu-directory)   ;目录打开菜单
+   ("C-c o" . one-key-menu-directory)   ;目录打开菜单
    ("s-," . bury-buffer)                ;隐藏当前buffer
    ("s-." . unbury-buffer)              ;反隐藏当前buffer
    ("s-b" . mode-line-other-buffer)     ;切换到最近的buffer

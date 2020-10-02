@@ -90,14 +90,15 @@
 (setq one-key-menu-directory-alist
       '(
         (("h" . "Home") . (lambda () (interactive) (dired-x-find-file "~/")))
-        (("b" . "Book") . (lambda () (interactive) (dired-x-find-file "/space/data/Book")))
+        (("b" . "Book") . (lambda () (interactive) (dired-x-find-file "~/org/book")))
+        (("d" . "Code") . (lambda () (interactive) (dired-x-find-file "~/code")))
+        (("m" . "MSCL") . (lambda () (interactive) (dired-x-find-file "~/org/mscl")))
         (("p" . "Emacs Package") . (lambda () (interactive) (dired-x-find-file Aquaemacs-root-dir)))
         (("z" . "Elisp") . (lambda () (interactive) (dired-x-find-file (concat Aquaemacs-extension-dir "/lazycat"))))
         (("c" . "Config") . (lambda () (interactive) (dired-x-find-file Aquaemacs-config-dir)))
         (("'" . "EAF Git") . (lambda () (interactive) (dired-x-find-file "/home/aqua0210/emacs-application-framework")))
         ((";" . "EAF Package") . (lambda () (interactive) (dired-x-find-file (concat Aquaemacs-extension-dir "/emacs-application-framework"))))
-        (("s" . "Space") . (lambda () (interactive) (dired-x-find-file "/space")))
-        (("x" . "Reading") . (lambda () (interactive) (dired-x-find-file "/space/data/Book/Reading")))
+        (("o" . "Org") . (lambda () (interactive) (dired-x-find-file "~/org")))
         ))
 
 (defun one-key-menu-directory ()
