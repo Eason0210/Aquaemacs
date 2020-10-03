@@ -231,13 +231,13 @@
 	url = https://github.com/arnm/ob-mermaid.git
 [submodule "js2-refactor"]
 	path = site-lisp/extensions/js2-refactor
-	url = https://github.com/Eason0210/js2-refactor.git
+	url = https://github.com/magnars/js2-refactor.el.git
 [submodule "multiple-cursors"]
 	path = site-lisp/extensions/multiple-cursors
-	url = https://github.com/Eason0210/multiple-cursors.git
+	url = https://github.com/magnars/multiple-cursors.el.git
 [submodule "org-gtd"]
 	path = site-lisp/extensions/org-gtd
-	url = https://github.com/Eason0210/org-gtd.git
+	url = https://github.com/Trevoke/org-gtd.el.git
 [submodule "org-agenda-property"]
 	path = site-lisp/extensions/org-agenda-property
 	url = https://github.com/Malabarba/org-agenda-property.git
@@ -246,7 +246,7 @@
 	url = https://github.com/TommyX12/company-tabnine.git
 [submodule "unicode-escape"]
 	path = site-lisp/extensions/unicode-escape
-	url = https://github.com/Eason0210/unicode-escape.git
+	url = https://github.com/kosh04/unicode-escape.el.git
 [submodule "go-translate"]
 	path = site-lisp/extensions/go-translate
 	url = https://github.com/lorniu/go-translate.git
@@ -259,3 +259,6 @@
 [submodule "esxml"]
 	path = site-lisp/extensions/esxml
 	url = https://github.com/tali713/esxml.git
+[submodule "org-edna"]
+	path = site-lisp/extensions/org-edna
+	url = https://github.com/emacs-straight/org-edna.git
