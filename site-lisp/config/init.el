@@ -88,6 +88,7 @@
          (require 'init-nox)
          (require 'init-sdcv)           ; Don't remove this line
          (require 'init-ispell)
+         (require 'init-snails)
 
          ;; Restore session at last.
          (require 'init-session)
