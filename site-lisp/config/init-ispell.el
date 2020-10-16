@@ -78,15 +78,10 @@
 
 ;;; Code:
 
+(setq-default ispell-program-name "aspell")
 (setq ispell-silently-savep t)          ;保存自己的个人词典不需要询问
 (setq flyspell-issue-message-flag nil)
-(setq ispell-dictionary "en_US"
-      ispell-program-name "aspell")
-
 (setq ispell-personal-dictionary (expand-file-name "flyspell/.aspell.en.pws" user-emacs-directory))
-
-(setq ispell-extra-args '("--sug-mode=ultra"))
-
 
 (dolist (hook '(text-mode-hook))
   (add-hook hook (lambda () (flyspell-mode 1))))                ;文本模式启动拼写检查
