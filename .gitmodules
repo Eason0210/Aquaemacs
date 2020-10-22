@@ -262,3 +262,6 @@
 [submodule "org-edna"]
 	path = site-lisp/extensions/org-edna
 	url = https://github.com/emacs-straight/org-edna.git
+[submodule "emacs-application-framework"]
+	path = site-lisp/extensions/emacs-application-framework
+	url = https://github.com/manateelazycat/emacs-application-framework.git

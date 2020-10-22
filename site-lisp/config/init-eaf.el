@@ -115,7 +115,7 @@
 
 (defun jekyll-start-server ()
   (interactive)
-  (eaf-run-command-in-terminal "jekyll serve --livereload" "/home/andy/manateelazycat.github.io"))
+  (eaf-run-command-in-terminal "jekyll serve --livereload" "/home/aqua/eason0210.github.io"))
 
 (defun jekyll-open-local ()
   (interactive)
