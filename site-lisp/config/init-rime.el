@@ -94,7 +94,6 @@
               :internal-border-width 10)))
 
 (when (eq system-type 'gnu/linux)
-  (setq rime-user-data-dir "/home/aqua/.local/share/fcitx5/rime")
   (setq rime-posframe-properties
         (list :background-color "#333333"
               :foreground-color "#dcdccc"
