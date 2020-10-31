@@ -31,7 +31,7 @@
     (require 'lazycat-theme)
     (lazycat-theme-load-dark)
     ;; (lazycat-theme-load-with-sunrise)
-    (when (eq system-type  'darwin)
+    (unless (eq system-type  'windows-nt)
       (require 'cache-path-from-shell)
       (exec-path-from-shell-initialize))
     (require 'lazy-load)
