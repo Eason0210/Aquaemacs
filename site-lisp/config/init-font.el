@@ -99,7 +99,7 @@
   )
 
 (when (eq system-type 'gnu/linux)
-  (setq fonts '("Noto Sans Mono" "Noto Sans Mono CJK SC"))
+  (setq fonts '("SF Mono" "Noto Sans Mono CJK SC"))
   (set-face-attribute 'default nil :font
                     (format "%s:pixelsize=%d" (car fonts) 24))
   ;; (setq face-font-rescale-alist '(("STKaiti". 1.0)))
