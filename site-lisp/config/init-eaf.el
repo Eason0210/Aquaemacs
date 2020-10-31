@@ -85,7 +85,7 @@
 ;;; Code:
 ;; Please use your own github token, it's free generate at https://github.com/settings/tokens/new?scopes=
 ;; Setting token will avoid block off by github API times limit.
-(setq eaf-grip-token "2a8ffd3a265e8da29e208e2da5a6636a7940c540")
+(setq eaf-grip-token "0d4a82aea7f2298a4fae7b5647a01453d05d1b62")
 
 ;; You need configuration your own local proxy program first.
 (setq eaf-proxy-type "socks5")
