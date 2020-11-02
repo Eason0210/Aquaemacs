@@ -61,7 +61,7 @@ $ ./configure && make && make install
 ## Install On Arch Linux
 1. Install emacs git version:
 ```
-sudo pacman -S emacs-git
+sudo pacman -S emacs-native-comp-git
 ```
 
 2. Install dependency for [EAF](https://github.com/manateelazycat/emacs-application-framework):

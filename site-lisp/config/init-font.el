@@ -87,7 +87,7 @@
 (when (eq system-type 'darwin)
   (setq fonts '("SF Mono" "冬青黑体简体中文"))
   (set-face-attribute 'default nil :font
-                    (format "%s:pixelsize=%d" (car fonts) 16))
+                      (format "%s:pixelsize=%d" (car fonts) 16))
   ;; (setq face-font-rescale-alist '(("STKaiti". 1.2)))
   )
 
@@ -101,13 +101,14 @@
 (when (eq system-type 'gnu/linux)
   (setq fonts '("SF Mono" "Noto Sans Mono CJK SC"))
   (set-face-attribute 'default nil :font
-                    (format "%s:pixelsize=%d" (car fonts) 24))
+                      (format "%s:pixelsize=%d" (car fonts) 24))
   ;; (setq face-font-rescale-alist '(("STKaiti". 1.0)))
   )
 
-(dolist (charset '(kana han symbol cjk-misc bopomofo))
-  (set-fontset-font (frame-parameter nil 'font) charset
-                    (font-spec :family (car (cdr fonts)))))
+(if (display-graphic-p)
+    (dolist (charset '(kana han symbol cjk-misc bopomofo))
+      (set-fontset-font (frame-parameter nil 'font) charset
+                        (font-spec :family (car (cdr fonts))))))
 
 
 (provide 'init-font)
