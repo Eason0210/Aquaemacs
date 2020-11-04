@@ -113,8 +113,8 @@
 ;; enable the /respect/ mode
 (sis-global-respect-mode t)
 
-;; enable the /follow context/ mode for all buffers
-(sis-global-follow-context-mode t)
+;; enable the /context/ mode for all buffers
+(sis-global-context-mode t)
 ;; enable the /inline english/ mode for all buffers
 (sis-global-inline-mode t)
 
