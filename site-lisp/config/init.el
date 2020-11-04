@@ -42,7 +42,7 @@
     (require 'highlight-parentheses)
 
     (require 'init-awesome-tray)
-    ;; (require 'init-awesome-tab)
+    (require 'init-awesome-tab)
     (require 'init-backup)
     (require 'init-line-number)
     (require 'init-auto-save)
