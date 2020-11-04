@@ -117,6 +117,8 @@
                     (require 'valign)
                     (valign-mode)
 
+                    (setq truncate-lines nil) ;默认换行
+
                     ;;Org-brain
                     (require 'org-brain)
                     (setq org-brain-path "~/org/brain")
