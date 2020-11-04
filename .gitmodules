@@ -157,9 +157,6 @@
 [submodule "lazy-search"]
 	path = site-lisp/extensions/lazy-search
 	url = https://github.com/manateelazycat/lazy-search.git
-[submodule "all-the-icons.el"]
-	path = site-lisp/extensions/all-the-icons.el
-	url = https://github.com/domtronn/all-the-icons.el.git
 [submodule "flex"]
 	path = site-lisp/extensions/flex
 	url = https://github.com/manateelazycat/flex.git
@@ -268,3 +265,9 @@
 [submodule "highlight-indent-guides"]
 	path = site-lisp/extensions/highlight-indent-guides
 	url = https://github.com/DarthFennec/highlight-indent-guides.git
+[submodule "all-the-icons"]
+	path = site-lisp/extensions/all-the-icons
+	url = https://github.com/domtronn/all-the-icons.el.git
+[submodule "emacs-memoize"]
+	path = site-lisp/extensions/emacs-memoize
+	url = https://github.com/skeeto/emacs-memoize.git
