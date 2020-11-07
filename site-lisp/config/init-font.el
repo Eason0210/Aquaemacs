@@ -94,7 +94,7 @@
 (when (eq system-type 'windows-nt)
   (setq fonts '("Consolas" "微软雅黑"))
   (set-face-attribute 'default nil :font
-                      (format "%s:pixelsize=%d" (car fonts) 22))
+                      (format "%s:pixelsize=%d" (car fonts) 24))
   ;; (setq face-font-rescale-alist '(("华文楷体". 1.1)))
   )
 
