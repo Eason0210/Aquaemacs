@@ -101,7 +101,7 @@
               :internal-border-width 10)))
 
 (when (eq system-type 'darwin)
-  (setq rime-librime-root "~/Aquaemacs/site-lisp/librime/dist")
+  (setq rime-librime-root "~/.emacs.d/librime/dist")
   (setq rime-user-data-dir "~/erime/")
   (setq rime-posframe-properties
         (list :background-color "#333333"
