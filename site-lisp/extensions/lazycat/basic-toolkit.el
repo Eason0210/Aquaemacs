@@ -529,6 +529,13 @@ Otherwise return nil."
     (dotimes (_ (abs n))
       (delete-indentation (natnump n)))))
 
+(defun blank-line-p ()
+  "Return t if current line is blank line.
+Otherwise, return nil."
+  (save-excursion
+    (beginning-of-line)
+    (looking-at "^[ \t]*\n")))
+
 (provide 'basic-toolkit)
 
 ;;; basic-toolkit.el ends here

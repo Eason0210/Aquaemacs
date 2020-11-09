@@ -477,13 +477,6 @@ To use this extension, you need install xtrlock in your system."
         (zone-leave-me-alone)))
     (zone)))
 
-(defun blank-line-p ()
-  "Return t if current line is blank line.
-Otherwise, return nil."
-  (save-excursion
-    (beginning-of-line)
-    (looking-at "^[ \t]*\n")))
-
 (defun is-digit (x)
   (cond ((stringp x) (is-digit (string-to-char x)))
         ((integerp x) (and (<= ?0 x) (<= x ?9)))
