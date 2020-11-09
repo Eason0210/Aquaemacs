@@ -78,7 +78,8 @@
 (require 'dired-details+)
 
 ;;; Code:
-
+(setq dired-omit-verbose nil)           ;忽略时不提示信息
+(setq auto-revert-verbose nil)          ;自动恢复buffer时不提示信息
 (setq dired-recursive-copies t)         ;可以递归的进行拷贝
 (setq dired-recursive-deletes t)        ;可以递归的删除目录
 (setq dired-recursive-deletes 'always)  ;删除东西时不提示
