@@ -271,3 +271,6 @@
 [submodule "emacs-memoize"]
 	path = site-lisp/extensions/emacs-memoize
 	url = https://github.com/skeeto/emacs-memoize.git
+[submodule "flycheck-posframe"]
+	path = site-lisp/extensions/flycheck-posframe
+	url = https://github.com/alexmurray/flycheck-posframe.git
