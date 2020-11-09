@@ -96,6 +96,7 @@
                ;; 'swift-mode-hook
                'go-mode-hook
                'js-mode-hook
+               'haskell-mode-hook
                ))
   (add-hook
    hook

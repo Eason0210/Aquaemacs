@@ -76,15 +76,20 @@
 (add-to-list 'Info-default-directory-list "~/Aquaemacs/site-lisp/extensions/haskell-mode/")
 (require 'haskell-indentation)
 (require 'haskell-extension)
+(require 'dante)
 
 ;;; Code:
 
 (add-hook 'haskell-mode-hook 'turn-on-font-lock) ;高亮模式
 (add-hook 'haskell-mode-hook 'haskell-indentation-mode) ;智能缩进模式
-;; (add-hook 'haskell-mode-hook 'turn-on-haskell-ghci)     ;GHCi 交互模式
-;; (add-hook 'haskell-mode-hook 'turn-on-haskell-indent) ;智能缩进模式
-;; (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode) ;文档模式
 (add-hook 'haskell-mode-hook 'hs-lint-mode-hook) ;代码建议
+
+(add-hook 'haskell-mode-hook 'subword-mode)
+(add-hook 'haskell-cabal-mode 'subword-mode)
+
+(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
+(add-hook 'haskell-mode-hook 'dante-mode)
+
 (setq haskell-font-lock-symbols t)               ;美化符号
 (defun my-haskell-mode-hook ()                   ;代码建议
   (local-set-key "\C-cl" 'hs-lint)
@@ -98,50 +103,6 @@
    )
  haskell-mode-map
  )
-
-;; purcell code
-;; (add-hook 'haskell-mode-hook 'subword-mode)
-;; (add-hook 'haskell-cabal-mode 'subword-mode)
-
-(require 'dante)
-(add-hook 'haskell-mode-hook 'flycheck-mode)
-(add-hook 'haskell-mode-hook 'dante-mode)
-(setq flycheck-check-syntax-automatically '(save mode-enabled))
-(add-hook 'dante-mode-hook
-   '(lambda () (flycheck-add-next-checker 'haskell-dante
-                '(warning . haskell-hlint))))
-
-;; (after-load 'dante
-;;             (flycheck-add-next-checker 'haskell-dante
-;;                                        '(warning . haskell-hlint)))
-
-(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
-
-;; (add-auto-mode 'haskell-mode "\\.ghci\\'")
-
-;; Indentation
-;; (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
-
-;; (define-minor-mode stack-exec-path-mode
-;;   "If this is a stack project, set `exec-path' to the path \"stack exec\" would use."
-;;   nil
-;;   :lighter ""
-;;   :global nil
-;;   (if stack-exec-path-mode
-;;       (when (and (executable-find "stack")
-;;                  (locate-dominating-file default-directory "stack.yaml"))
-;;         (let ((stack-path (replace-regexp-in-string
-;;                            "[\r\n]+\\'" ""
-;;                            (shell-command-to-string (concat "stack exec -- sh -c "
-;;                                                             (shell-quote-argument "echo $PATH"))))))
-;;           (setq-local exec-path (seq-uniq (parse-colon-path stack-path) 'string-equal))
-;;           (make-local-variable 'process-environment)
-;;           (setenv "PATH" (string-join exec-path path-separator))))
-;;     (kill-local-variable 'exec-path)
-;;     (kill-local-variable 'process-environment)))
-
-;; (add-hook 'haskell-mode-hook 'stack-exec-path-mode)
-
 
 (provide 'init-haskell)
 
