@@ -12,7 +12,7 @@
 ;; /Users/ott/projects/lang-exp/haskell/test.hs:52:1: Eta reduce
 ;; Found:
 ;;   count1 p l = length (filter p l)
-;; Why not:
+;; Perhaps:
 ;;   count1 p = length . filter p
 
 
@@ -52,11 +52,11 @@
 ;; ^\(.*?\):\([0-9]+\):\([0-9]+\): .*
 ;; Found:
 ;; \s +\(.*\)
-;; Why not:
+;; Perhaps:
 ;; \s +\(.*\)
 
 (defvar hs-lint-regex
-  "^\\(.*?\\):\\([0-9]+\\):\\([0-9]+\\): .*[\n\C-m]Found:[\n\C-m]\\s +\\(.*\\)[\n\C-m]Why not:[\n\C-m]\\s +\\(.*\\)[\n\C-m]"
+  "^\\(.*?\\):\\([0-9]+\\):\\([0-9]+\\): .*[\n\C-m]Found:[\n\C-m]\\s +\\(.*\\)[\n\C-m]Perhaps:[\n\C-m]\\s +\\(.*\\)[\n\C-m]"
   "Regex for HLint messages")
 
 (defun make-short-string (str maxlen)
@@ -69,15 +69,15 @@
   (goto-char (point-min))
   (while (re-search-forward hs-lint-regex nil t)
     (let* ((fname (match-string 1))
-           (fline (string-to-number (match-string 2)))
-           (old-code (match-string 4))
-           (new-code (match-string 5))
-           (msg (concat "Replace '" (make-short-string old-code 30)
-                        "' with '" (make-short-string new-code 30) "'"))
-           (bline 0)
-           (eline 0)
-           (spos 0)
-           (new-old-code ""))
+          (fline (string-to-number (match-string 2)))
+          (old-code (match-string 4))
+          (new-code (match-string 5))
+          (msg (concat "Replace '" (make-short-string old-code 30)
+                       "' with '" (make-short-string new-code 30) "'"))
+          (bline 0)
+          (eline 0)
+          (spos 0)
+          (new-old-code ""))
       (save-excursion
         (switch-to-buffer (get-file-buffer fname))
         (goto-line fline)
@@ -91,8 +91,8 @@
           (setf old-code (regexp-quote old-code))
           (while (string-match "\\\\ " old-code spos)
             (setf new-old-code (concat new-old-code
-                                       (substring old-code spos (match-beginning 0))
-                                       "\\ *"))
+                                 (substring old-code spos (match-beginning 0))
+                                 "\\ *"))
             (setf spos (match-end 0)))
           (setf new-old-code (concat new-old-code (substring old-code spos)))
           (remove-text-properties bline eline '(composition nil))
@@ -103,7 +103,7 @@
   "Function, that is executed at the end of HLint execution"
   (if hs-lint-replace-with-suggestions
       (hs-lint-replace-suggestions)
-    (next-error 1 t)))
+      (next-error 1 t)))
 
 (define-compilation-mode hs-lint-mode "HLint"
   "Mode for check Haskell source code."
@@ -119,7 +119,7 @@
   "Run HLint for current buffer with haskell source"
   (interactive)
   (save-some-buffers hs-lint-save-files)
-  (compilation-start (concat hs-lint-command " " buffer-file-name)
+  (compilation-start (concat hs-lint-command " \"" buffer-file-name "\"")
                      'hs-lint-mode))
 
 (provide 'hs-lint)

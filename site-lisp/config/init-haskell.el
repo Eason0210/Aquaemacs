@@ -91,11 +91,14 @@
 (add-hook 'haskell-mode-hook 'dante-mode)
 
 (setq haskell-font-lock-symbols t)               ;美化符号
-(defun my-haskell-mode-hook ()                   ;代码建议
-  (local-set-key "\C-cl" 'hs-lint)
-  ;; (local-set-key "\C-cL" 'hs-scan)
-  )
-(add-hook 'haskell-mode-hook 'my-haskell-mode-hook)
+
+(lazy-load-local-keys
+ '(
+   ("C-c l" . hs-lint)
+   )
+ haskell-mode-map
+ "hs-lint"
+ )
 
 (lazy-load-set-keys
  '(
