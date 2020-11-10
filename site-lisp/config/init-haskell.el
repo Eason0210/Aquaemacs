@@ -103,6 +103,7 @@
 (lazy-load-set-keys
  '(
    ("M-;" . comment-dwim-with-haskell-style) ;注释
+   ("C-c h" . hoogle)
    )
  haskell-mode-map
  )
