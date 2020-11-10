@@ -92,6 +92,10 @@
 
 (setq haskell-font-lock-symbols t)               ;美化符号
 
+;; Source code helpers
+
+(add-hook 'haskell-mode-hook 'haskell-auto-insert-module-template)
+
 (lazy-load-local-keys
  '(
    ("C-c l" . hs-lint)
