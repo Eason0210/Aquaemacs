@@ -106,6 +106,7 @@
                                  '((swift-mode) "sourcekit-lsp"))
                     (add-to-list 'nox-server-programs
                                  '(haskell-mode . ("haskell-language-server-wrapper" "--lsp")))
+                    (setq nox-python-server "pyright")
                     (nox-ensure))))
 (if (eq system-type 'windows-nt)
     (setq nox-python-path "c:/Python38/python.exe"))
