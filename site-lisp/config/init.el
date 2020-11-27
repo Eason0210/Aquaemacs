@@ -88,6 +88,7 @@
          (require 'init-sdcv)           ; Don't remove this line
          (require 'init-ispell)
          (require 'init-snails)
+         (require 'init-hippie-expand)
 
          ;; Restore session at last.
          (require 'init-session)
