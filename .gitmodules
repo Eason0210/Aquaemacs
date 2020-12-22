@@ -277,3 +277,6 @@
 [submodule "rust-mode"]
 	path = site-lisp/extensions/rust-mode
 	url = https://github.com/rust-lang/rust-mode.git
+[submodule "modern-cpp-font-lock"]
+	path = site-lisp/extensions/modern-cpp-font-lock
+	url = https://github.com/ludwigpacifici/modern-cpp-font-lock.git
