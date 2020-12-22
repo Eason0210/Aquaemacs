@@ -91,15 +91,12 @@
    hook
    '(lambda ()
       (require 'cc-mode)
-      (require 'c-eldoc)
       (require 'modern-cpp-font-lock)
 
       (defun c-mode-style-setup ()
         (interactive)
         "Set up c-mode and related modes.
 Includes support for Qt code (signal, slots and alikes)."
-        ;; eldoc.
-        (c-turn-on-eldoc-mode)
 
         ;; cpp font lock.
         (modern-c++-font-lock-global-mode t)
