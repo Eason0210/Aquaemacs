@@ -208,9 +208,6 @@
 [submodule "ahk-mode"]
 	path = site-lisp/extensions/ahk-mode
 	url = https://github.com/ralesi/ahk-mode.git
-[submodule "imbot"]
-	path = site-lisp/extensions/imbot
-	url = https://github.com/Eason0210/imbot.git
 [submodule "mscl-mode"]
 	path = site-lisp/extensions/mscl-mode
 	url = https://github.com/Eason0210/mscl-mode.git
