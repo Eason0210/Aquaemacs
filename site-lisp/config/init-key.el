@@ -644,7 +644,7 @@
 
 (lazy-load-global-keys
  '(
-   ("C-SPC" . toggle-input-method)
+   ("C-\\" . toggle-input-method)
    ("C-`" . rime-send-keybinding)
    ("s-m" . rime-force-enable)
    )
@@ -687,12 +687,6 @@
    ("C-," . flyspell-correct-wrapper)
    )
  "init-ispell")
-
-(lazy-load-global-keys
- '(
-   ("C-\\" . sis-switch)
-   )
- "init-smart-input-source")
 
 ;; multiple-cursors
 (lazy-load-global-keys

@@ -82,7 +82,6 @@
          (require 'init-highlight-indent-guides)
          (when (eq system-type 'gnu/linux)
            (require 'init-eaf))
-         (require 'init-imbot)
          (require 'init-rime)
          (require 'init-nox)
          (require 'init-sdcv)           ; Don't remove this line
