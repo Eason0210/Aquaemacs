@@ -89,6 +89,14 @@
 (setq initial-buffer-choice t)
 (run-with-timer 1 nil #'(lambda () (bury-buffer)))
 
+;; 增加长行处理性能
+ (setq bidi-inhibit-bpa t)
+ (setq-default bidi-paragraph-direction 'left-to-right)
+
+ ;; 增加IO性能
+ (setq process-adaptive-read-buffering nil)
+ (setq read-process-output-max (* 1024 1024))
+
 (fset 'yes-or-no-p 'y-or-n-p)           ;以 y/n代表 yes/no
 (blink-cursor-mode -1)                  ;指针不闪动
 (transient-mark-mode 1)                 ;标记高亮
