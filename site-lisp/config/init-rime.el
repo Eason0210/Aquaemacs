@@ -106,7 +106,7 @@
   (setq rime-posframe-properties
         (list :background-color "#333333"
               :foreground-color "#dcdccc"
-              :font "冬青黑体简体中文"
+              :font "冬青黑体简体中文-18"
               :internal-border-width 10)))
 
 (setq default-input-method "rime"
