@@ -277,3 +277,6 @@
 [submodule "browse-kill-ring"]
 	path = site-lisp/extensions/browse-kill-ring
 	url = https://github.com/browse-kill-ring/browse-kill-ring.git
+[submodule "highlight-parentheses"]
+	path = site-lisp/extensions/highlight-parentheses
+	url = https://github.com/tsdh/highlight-parentheses.el.git
