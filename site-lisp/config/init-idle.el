@@ -88,10 +88,6 @@
 (browse-kill-ring-default-keybindings)    ;加载默认的按键邦定
 (setq browse-kill-ring-quit-action        ;设置退出动作
       (quote save-and-restore))           ;保存还原窗口设置
-(autoload 'hanconvert-region "hanconvert" ;简繁中文互相转换
-  "Convert a region from simple chinese to tradition chinese or
-from tradition chinese to simple chinese" t)
-(autoload 'irfc "init-irfc")
 (custom-set-variables '(tramp-verbose 0)) ;设置tramp的响应方式, 关闭后不弹出消息
 (setq max-lisp-eval-depth 40000)          ;lisp最大执行深度
 (setq max-specpdl-size 10000)             ;最大容量
