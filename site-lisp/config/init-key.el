@@ -600,11 +600,7 @@
    ("M-s-q" . apply-macro-to-region-lines) ;应用键盘宏到选择的区域
    )
  "macros+")
-;;; ### auto-install ###
-(lazy-load-global-keys
- '(
-   ("C-s-x" . auto-install-from-emacswiki))
- "init-auto-install")
+
 ;;; ### expand-region ###
 (lazy-load-global-keys
  '(
