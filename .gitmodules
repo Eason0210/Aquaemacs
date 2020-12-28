@@ -274,3 +274,6 @@
 [submodule "modern-cpp-font-lock"]
 	path = site-lisp/extensions/modern-cpp-font-lock
 	url = https://github.com/ludwigpacifici/modern-cpp-font-lock.git
+[submodule "browse-kill-ring"]
+	path = site-lisp/extensions/browse-kill-ring
+	url = https://github.com/browse-kill-ring/browse-kill-ring.git
