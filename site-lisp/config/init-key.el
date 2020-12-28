@@ -298,8 +298,8 @@
 (setq awesome-pair-key-alist
       '(
         ;; 移动
-        ("M-n" . awesome-pair-jump-left)
-        ("M-p" . awesome-pair-jump-right)
+        ("M-p" . awesome-pair-jump-left)
+        ("M-n" . awesome-pair-jump-right)
         ;; 符号插入
         ("%" . awesome-pair-match-paren)       ;括号跳转
         ("(" . awesome-pair-open-round)        ;智能 (
