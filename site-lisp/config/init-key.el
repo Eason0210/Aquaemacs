@@ -201,7 +201,7 @@
    ("C-/" . undo-tree-undo)             ;撤销
    ("C-?" . undo-tree-redo)             ;重做)
    )
- "undo-tree")
+ "init-undo-tree")
 ;;; ### Rect ###
 ;;; --- 矩形操作
 (lazy-load-global-keys
