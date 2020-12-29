@@ -693,4 +693,11 @@
    )
  "hanconvert")
 
+;; Run commands quickly
+(lazy-load-global-keys
+ '(
+   ("C-c x" . quickrun)
+   )
+ "quickrun")
+
 (provide 'init-key)

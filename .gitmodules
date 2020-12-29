@@ -280,3 +280,6 @@
 [submodule "highlight-parentheses"]
 	path = site-lisp/extensions/highlight-parentheses
 	url = https://github.com/tsdh/highlight-parentheses.el.git
+[submodule "quickrun"]
+	path = site-lisp/extensions/quickrun
+	url = https://github.com/emacsorphanage/quickrun.git
