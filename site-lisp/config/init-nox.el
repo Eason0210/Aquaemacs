@@ -100,6 +100,9 @@
                ))
   (add-hook hook '(lambda ()
                     (require 'nox)
+                    ;; fixed issue when killing buffer with awesome-tab.
+                    (setq nox-autoshutdown t)
+
                     (add-to-list 'nox-server-programs
                                  '((c++-mode c-mode) "clangd"))
                     (add-to-list 'nox-server-programs
@@ -110,8 +113,6 @@
                     (nox-ensure))))
 (if (eq system-type 'windows-nt)
     (setq nox-python-path "c:/Python38/python.exe"))
-
-
 
 (lazy-load-set-keys
  '(
