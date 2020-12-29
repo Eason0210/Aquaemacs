@@ -685,4 +685,12 @@
    )
  "multiple-cursors")
 
+;; Convert a region from simple chinese to tradition chinese or
+;; from tradition chinese to simple chinese
+(lazy-load-global-keys
+ '(
+   ("C-z c" . hanconvert-region)
+   )
+ "hanconvert")
+
 (provide 'init-key)
