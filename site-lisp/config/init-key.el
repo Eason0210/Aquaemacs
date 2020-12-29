@@ -72,8 +72,6 @@
    ("s-b" . mode-line-other-buffer)     ;切换到最近的buffer
    ("s-[" . eval-expression)            ;执行表达式
    ("C-s-q" . quoted-insert)            ;读取系一个输入字符并插入
-   ("M-h" . set-mark-command) ;Instead C-Space for Chinese input method
-   ("M-H" . set-mark-command) ;Instead C-Space for Chinese input method
    ("<f9>" . lazycat-theme-toggle)
    ))
 (lazy-load-global-keys
@@ -369,7 +367,7 @@
 ;; Cycle buffer
 (lazy-load-global-keys
  '(
-   ("M-C" . one-key-menu-cycle-buffer)  ;特定模式切换
+   ("M-h" . one-key-menu-cycle-buffer)  ;特定模式切换
    )
  "init-cycle-buffer")
 ;;; ### Isearch ###
