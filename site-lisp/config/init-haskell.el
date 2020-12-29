@@ -73,7 +73,8 @@
 
 ;;; Require
 (require 'haskell-mode-autoloads)
-(add-to-list 'Info-default-directory-list "~/Aquaemacs/site-lisp/extensions/haskell-mode/")
+(add-to-list 'Info-default-directory-list
+             (concat Aquaemacs-extension-dir "/haskell-mode/"))
 (require 'haskell-indentation)
 (require 'haskell-extension)
 (require 'dante)
@@ -107,7 +108,7 @@
 (lazy-load-set-keys
  '(
    ("M-;" . comment-dwim-with-haskell-style) ;注释
-   ("C-c h" . hoogle)
+   ("C-c g" . hoogle)
    )
  haskell-mode-map
  )
