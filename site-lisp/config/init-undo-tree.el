@@ -80,6 +80,12 @@
 
 (global-undo-tree-mode)
 
+(lazy-load-set-keys
+ '(
+   ("C-/" . undo-tree-undo)
+   ("C-?" . undo-tree-redo)
+   ))
+
 (provide 'init-undo-tree)
 
 ;;; init-undo-tree.el ends here

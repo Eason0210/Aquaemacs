@@ -38,7 +38,7 @@
     (require 'awesome-pair)
     (require 'display-line-numbers)
     (require 'basic-toolkit)
-    (require 'redo)
+    (require 'init-undo-tree)
     (require 'highlight-parentheses)
 
     (require 'init-awesome-tray)

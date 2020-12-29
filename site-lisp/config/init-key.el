@@ -194,12 +194,7 @@
    ("C-M-S-h" . mark-paragraph)            ;选中段落
    ("M-SPC" . just-one-space)              ;只有一个空格在光标处
    ))
-(lazy-load-global-keys
- '(
-   ("C-/" . undo-tree-undo)             ;撤销
-   ("C-?" . undo-tree-redo)             ;重做)
-   )
- "init-undo-tree")
+
 ;;; ### Rect ###
 ;;; --- 矩形操作
 (lazy-load-global-keys
