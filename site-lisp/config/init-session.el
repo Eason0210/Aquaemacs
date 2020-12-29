@@ -7,8 +7,8 @@
 ;; Copyright (C) 2013, Andy Stewart, all rights reserved.
 ;; Created: 2013-12-28 01:19:38
 ;; Version: 0.4
-;; Last-Updated: 2018-06-20 05:59:41
-;;           By: Andy Stewart
+;; Last-Updated: 2020-12-29 23:24:09
+;;           By: Eason Huang
 ;; URL: http://www.emacswiki.org/emacs/download/init-session.el
 ;; Keywords:
 ;; Compatibility: GNU Emacs 24.3.50.1
@@ -115,9 +115,7 @@
         ;; Kill all buffers if with prefix argument.
         (mapc 'kill-buffer (buffer-list))
       ;; Kill unused buffers.
-      (unless (eq system-type 'windows-nt)
-        (kill-unused-buffers))
-
+      (kill-unused-buffers)
       ;; Save all buffers before exit.
       (auto-save-buffers))
     ;; Save session.
