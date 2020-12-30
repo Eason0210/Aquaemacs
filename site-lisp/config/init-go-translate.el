@@ -91,6 +91,8 @@
 (setq go-translate-inputs-function
       #'go-translate-inputs-current-or-prompt)
 
+(setq go-translate-token-current (cons 430675 2721866133))
+
 (provide 'init-go-translate )
 
 ;;; init-go-translate.el ends here
