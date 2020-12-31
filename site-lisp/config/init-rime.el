@@ -110,10 +110,9 @@
               :internal-border-width 10)))
 
 (setq default-input-method "rime"
-      rime-show-candidate 'posframe)
+      rime-show-candidate nil)
 
-(setq rime-show-preedit 'inline)
-(setq rime-posframe-fixed-position t)
+(setq rime-show-preedit t)
 
 ;;代码中直接英文，注释和其他模式中根据断言选择输入模式
 (setq rime-disable-predicates '(rime-predicate-prog-in-code-p
