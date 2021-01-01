@@ -90,7 +90,7 @@
   (setq rime-posframe-properties
         (list :background-color "#333333"
               :foreground-color "#dcdccc"
-              :font "微软雅黑-15"
+              :font "微软雅黑"
               :internal-border-width 10)))
 
 (when (eq system-type 'gnu/linux)
@@ -106,7 +106,7 @@
   (setq rime-posframe-properties
         (list :background-color "#333333"
               :foreground-color "#dcdccc"
-              :font "冬青黑体简体中文-18"
+              :font "冬青黑体简体中文"
               :internal-border-width 10)))
 
 (setq default-input-method "rime"
@@ -135,6 +135,14 @@
           (lambda ()
             (if (equal current-input-method "rime")
                 (toggle-input-method))))
+
+;; switch the way to display candidate
+(defun rime-switch-candidate-display-style ()
+  "use posframe for candidate if current is nil"
+  (interactive)
+  (if (equal rime-show-candidate nil)
+      (setq rime-show-candidate 'posframe)
+    (setq rime-show-candidate nil)))
 
 (provide 'init-rime)
 
